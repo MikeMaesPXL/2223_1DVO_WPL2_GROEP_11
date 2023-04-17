@@ -1,0 +1,48 @@
+:root {
+    --tertiary-color-white: #ffffff;
+    --tertiary-color-black: #353535;
+    --tertiary-color-broken-white: #fff2e2;
+
+    --primary-color-blue: #1ad4ff;
+    --primary-color-pink: #fc1dc8;
+
+    --secondary-color-blue: #8deffc;
+    --secondary-color-pink: #ff69c2;
+
+    --font-family-header: "sirenia", sans-serif;
+    --font-family-title: "proxima-nova", sans-serif;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+/* -- LANDING PAGE -- */
+/* -- ABOUT -- */
+#nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar {
+    background-color: var(--tertiary-color-broken-white);
+    padding: 0 !important;
+}
+.nav-item {
+    padding-left: 1.5rem;
+}
+.nav-item a {
+    color: var(--tertiary-color-black);
+    font-family: var(--font-family-title);
+    font-weight: 400;
+}
+.navbar-brand img {
+    height: 30px;
+    padding-left: 20px;
+}
+.container-fluid {
+    padding: 10px;
+}
+/* -- PRODUCTS -- */
+/* -- FAQ -- */
+/* -- CONTACT -- */
