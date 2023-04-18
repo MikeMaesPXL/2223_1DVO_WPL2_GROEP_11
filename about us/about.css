@@ -1,0 +1,94 @@
+:root {
+    --primary-color-purple: #8b17ff;
+    --secondary-color-orange: #ff9b00;
+    --secondary-color-dark-blue: #2f1966;
+    --secondary-color-light-blue: #8787ff;
+    --secondary-color-white-grey: #faf6f4;
+
+    --body-text-color: #1a1a1a;
+    --tertiary-color-white: #ffffff;
+
+    --font-family-header: "sirenia", sans-serif;
+    --font-family-title: "proxima-nova", sans-serif;
+    --font-family-body: "roboto-slab", serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* -- Fonts and colors in classes -- */
+.font-title{
+    font-family: var(--font-family-title);
+}
+.font-body {
+    font-family: var(--font-family-body);
+}
+.header-text-color {
+    color: var(--secondary-color-dark-blue);
+}
+.body-text-color {
+    color: var(--body-text-color);
+}
+
+/* -- NAV -- */
+#nav-bar {
+    top: 0;
+    z-index: 10;
+}
+.navbar {
+    background-color: var(--secondary-color-white-grey);
+    padding: 0 !important;
+}
+.nav-item {
+    padding-left: 2rem;
+}
+.nav-item a {
+    color: var(--primary-color-purple);
+    font-weight: 500;
+}
+.navbar-brand {
+    padding-left: 10%;
+}
+#navbarNav {
+    padding-right: 10%;
+}
+.navbar-brand img {
+    height: 30px;
+}
+.nav-link:hover {
+    color: var(--secondary-color-orange);
+}
+
+/* -- INFO & MISSION, VISION -- */
+#about-info-section, #about-mv-section {
+    min-height: 100vh;
+}
+#icon_logo {
+    width: 100px;
+    height: auto;
+}
+#blob_1 {
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+#blob_2 {
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+.missie-wrapper {
+    margin-bottom: 150px;
+}
+.visie-wrapper {
+    margin-top: 250px;
+}
+
+/* -- FOOTER --*/
+.footer {
+    background-color: var(--primary-color-purple);
+}
+.text-footer {
+    color: white;
+}
