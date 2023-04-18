@@ -4,7 +4,7 @@
     --tertiary-color-broken-white: #fff2e2;
 
     --primary-color-blue: #1ad4ff;
-    --primary-color-pink: #fc1dc8;
+    --primary-color-pink: #e50058;
 
     --secondary-color-blue: #8deffc;
     --secondary-color-pink: #ff69c2;
@@ -25,14 +25,14 @@
     z-index: 10;
 }
 .navbar {
-    background-color: var(--primary-color-blue);
+    background-color: var(--primary-color-pink);
     padding: 0 !important;
 }
 .nav-item {
     padding-left: 1.5rem;
 }
 .nav-item a {
-    color: var(--tertiary-color-black);
+    color: var(--tertiary-color-white);
     font-family: var(--font-family-title);
     font-weight: 400;
 }
@@ -58,7 +58,7 @@
 }
 
 .footer {
-    background-color: var(--primary-color-blue);
+    background-color: var(--primary-color-pink);
     font-family: var(--font-family-title);
 }
 /* -- PRODUCTS -- */
