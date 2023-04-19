@@ -91,5 +91,14 @@ body::-webkit-scrollbar{
 }
 .btn-primary:hover {
     scale: 1.04 !important;
-    transition: all 1s ease-in !important;
+    transition: all 500ms ease-in !important;
+}
+.btn-outline-primary {
+    color: var(--primary-color-purple) !important;
+    border: 2px solid var(--secondary-color-dark-blue) !important;
+}
+.btn-outline-primary:hover {
+    background-color: transparent !important;
+    scale: 1.04 !important;
+    transition: all 500ms ease-in !important;
 }
