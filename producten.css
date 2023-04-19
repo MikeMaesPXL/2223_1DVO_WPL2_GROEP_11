@@ -82,10 +82,14 @@ body::-webkit-scrollbar{
     border-color: #FF9B00;
     border-width: 4px;
 }
-.gratisPakketBtn {
-    background-color: #2F1966;
-    color: #fff;
+.card-header h4 {
+    text-align: center;
 }
-.gratisPakketBtn:hover {
-    background-color: #8B17FF;
+.btn-primary {
+    background-color: var(--primary-color-purple) !important;
+    border: 2px solid var(--secondary-color-dark-blue) !important;
+}
+.btn-primary:hover {
+    scale: 1.04 !important;
+    transition: all 1s ease-in !important;
 }
