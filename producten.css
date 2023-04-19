@@ -17,6 +17,11 @@
     padding: 0;
 }
 
+/* -- Webkits -- */
+body::-webkit-scrollbar{
+    display: none;
+}
+
 /* -- Fonts and colors in classes -- */
 .font-title{
     font-family: var(--font-family-title);
@@ -59,47 +64,28 @@
 .nav-link:hover {
     color: var(--secondary-color-orange);
 }
-
-.container-info h2 {
-    font-family: var(--font-family-title);
-    font-size: 28px;
-}
-.container-info p {
-    font-family: var(--font-family-body);
-}
-
 .footer {
     background-color: var(--primary-color-purple);
 }
 .text-footer {
     color: white;
 }
-/* -- PRODUCTS -- */
+/* -- PRODUCT SECTION -- */
+#product-section {
+    min-height: 100vh;
+}
 .card.purpleBorder {
     border-color: #8787FF;
     border-width: 4px;
 }
-
 .card.orangeBorder {
     border-color: #FF9B00;
     border-width: 4px;
 }
-
-
-
 .gratisPakketBtn {
     background-color: #2F1966;
     color: #fff;
 }
-
 .gratisPakketBtn:hover {
     background-color: #8B17FF;
 }
-
-
-
-
-
-
-/* -- FAQ -- */
-/* -- CONTACT -- */

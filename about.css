@@ -17,6 +17,11 @@
     padding: 0;
 }
 
+/* -- Webkits -- */
+body::-webkit-scrollbar{
+    display: none;
+}
+
 /* -- Fonts and colors in classes -- */
 .font-title{
     font-family: var(--font-family-title);
