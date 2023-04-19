@@ -50,13 +50,17 @@ body::-webkit-scrollbar{
     font-weight: 500;
 }
 .navbar-brand {
-    padding-left: 10%;
+    padding-left: 7%;
 }
 #navbarNav {
-    padding-right: 10%;
+    padding-right: 7%;
 }
 .navbar-brand img {
     height: 30px;
+}
+.shopping-cart img {
+    height: 20px;
+    color: var(--primary-color-purple);
 }
 .nav-link:hover {
     color: var(--secondary-color-orange) !important;

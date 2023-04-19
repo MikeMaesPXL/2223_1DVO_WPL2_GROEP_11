@@ -9,7 +9,6 @@
     background-size: 50% 30%;
     background-position: -60%;
 }
-
 #about-info-section, #about-mv-section {
     min-height: 100vh;
 }
@@ -24,13 +23,4 @@
 .visie-wrapper {
     margin-top: 250px;
 }
-/*#blob_1 {*/
-/*    top: 0;*/
-/*    right: 0;*/
-/*    z-index: -1;*/
-/*}*/
-/*#blob_2 {*/
-/*    bottom: 0;*/
-/*    left: 0;*/
-/*    z-index: -1;*/
-/*}*/
+
