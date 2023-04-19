@@ -1,7 +1,7 @@
 :root {
     --primary-color-purple: #8b17ff;
     --secondary-color-orange: #ff9b00;
-    --secondary-color-dark-blue: #2f1966;
+    --secondary-color-dark-blue: #000000;
     --secondary-color-light-blue: #8787ff;
     --secondary-color-white-grey: #faf6f4;
 
@@ -16,7 +16,10 @@
     margin: 0;
     padding: 0;
 }
-
+/* -- Webkits -- */
+body::-webkit-scrollbar{
+    display: none;
+}
 /* -- Fonts and colors in classes -- */
 .font-title{
     font-family: var(--font-family-title);
@@ -30,7 +33,6 @@
 .body-text-color {
     color: var(--body-text-color);
 }
-
 /* -- NAV -- */
 #nav-bar {
     top: 0;
@@ -48,47 +50,25 @@
     font-weight: 500;
 }
 .navbar-brand {
-    padding-left: 10%;
+    padding-left: 7%;
 }
 #navbarNav {
-    padding-right: 10%;
+    padding-right: 7%;
 }
 .navbar-brand img {
     height: 30px;
 }
+.shopping-cart img {
+    height: 20px;
+    color: var(--primary-color-purple);
+}
 .nav-link:hover {
-    color: var(--secondary-color-orange);
+    color: var(--secondary-color-orange) !important;
 }
-
-/* -- INFO & MISSION, VISION -- */
-#about-info-section, #about-mv-section {
-    min-height: 100vh;
-}
-#icon_logo {
-    width: 100px;
-    height: auto;
-}
-#blob_1 {
-    top: 0;
-    right: 0;
-    z-index: -1;
-}
-#blob_2 {
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-}
-.missie-wrapper {
-    margin-bottom: 150px;
-}
-.visie-wrapper {
-    margin-top: 250px;
-}
-
 /* -- FOOTER --*/
 .footer {
     background-color: var(--primary-color-purple);
 }
 .text-footer {
-    color: white;
+    color: var(--tertiary-color-white);
 }

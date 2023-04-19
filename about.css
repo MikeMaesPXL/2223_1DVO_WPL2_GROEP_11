@@ -1,0 +1,26 @@
+/*!* -- INFO & MISSION, VISION -- *!*/
+#purple-blob {
+    background: url("images/Vorm2.svg") no-repeat center right;
+    background-size: 50% 35%;
+    background-position: 160%;
+}
+#orange-blob {
+    background: url("images/Vorm1.svg") no-repeat bottom left;
+    background-size: 50% 30%;
+    background-position: -60%;
+}
+#about-info-section, #about-mv-section {
+    min-height: 100vh;
+}
+#icon_logo {
+    width: 100px;
+    height: auto;
+}
+/* -- Wrappers om de visie en missie omhoog en omlaag te pushen -- */
+.missie-wrapper {
+    margin-bottom: 150px;
+}
+.visie-wrapper {
+    margin-top: 250px;
+}
+
