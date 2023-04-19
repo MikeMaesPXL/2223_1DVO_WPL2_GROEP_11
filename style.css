@@ -59,7 +59,7 @@ body::-webkit-scrollbar{
     height: 30px;
 }
 .nav-link:hover {
-    color: var(--secondary-color-orange);
+    color: var(--secondary-color-orange) !important;
 }
 /* -- FOOTER --*/
 .footer {
