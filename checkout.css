@@ -1,3 +1,21 @@
 #checkout-section {
     min-height: 100vh;
 }
+.btn.btn-primary {
+    background-color: #2F1966 !important;
+}
+.btn.btn-secondary {
+    background-color: #2F1966 !important;
+}
+span.text-primary {
+    color: #2F1966 !important;
+}
+span.badge.bg-primary.rounded-pill {
+    background-color: #2F1966 !important;
+}
+#facturatie-title {
+    color: #2F1966 !important;
+}
+#betaling-title {
+    color: #2F1966 !important;
+}
