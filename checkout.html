@@ -45,6 +45,222 @@
     </nav>
 </section>
 
+<section class="container-md" id="checkout-section">
+    <div class="container-md p-5">
+        <main>
+            <div class="row g-5">
+                <div class="col-md-5 col-lg-4 order-md-last pt-5">
+                    <h4 class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="text-primary">Uw Winkelwagen!</span>
+                        <span class="badge bg-primary rounded-pill">3</span>
+                    </h4>
+                    <ul class="list-group mb-3">
+                        <li class="list-group-item d-flex justify-content-between lh-sm">
+                            <div>
+                                <h6 class="my-0">Product naam</h6>
+                                <small class="text-muted">Korte uitleg</small>
+                            </div>
+                            <span class="text-muted">€12</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between lh-sm">
+                            <div>
+                                <h6 class="my-0">Tweede product</h6>
+                                <small class="text-muted">Korte uitleg</small>
+                            </div>
+                            <span class="text-muted">€8</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between lh-sm">
+                            <div>
+                                <h6 class="my-0">Derde item</h6>
+                                <small class="text-muted">Korte uitleg</small>
+                            </div>
+                            <span class="text-muted">€5</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between bg-light">
+                            <div class="text-success">
+                                <h6 class="my-0">Promo code</h6>
+                                <small>KLEINEZORG2023</small>
+                            </div>
+                            <span class="text-success">−€5</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span>Totaal (EUR)</span>
+                            <strong>€20</strong>
+                        </li>
+                    </ul>
+
+                    <form class="card p-2">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Promo code">
+                            <button type="submit" class="btn btn-secondary">Inwisselen</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-7 col-lg-8">
+                    <h4 class="mb-3 pt-5">Facturatie Adres</h4>
+                    <form class="needs-validation py-5" novalidate>
+                        <div class="row g-3">
+                            <div class="col-sm-3">
+                                <label for="firstName" class="form-label">Voornaam</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                                <div class="invalid-feedback">
+                                    Geef een geldige voornaam in.
+                                </div>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <label for="lastName" class="form-label">Achternaam</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                                <div class="invalid-feedback">
+                                    Geef een geldige achternaam in.
+                                </div>
+                            </div>
+
+                            <div class="col-6">
+                                <label for="username" class="form-label">Gebruikersnaam</label>
+                                <div class="input-group has-validation">
+                                    <span class="input-group-text">@</span>
+                                    <input type="text" class="form-control" id="username" placeholder="Gebruikersnaam" required>
+                                    <div class="invalid-feedback">
+                                        Gebruikersnaam nodig.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6">
+                                <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
+                                <input type="email" class="form-control" id="email" placeholder="email@example.com">
+                                <div class="invalid-feedback">
+                                    Vul een geldig e-mail adres in voor jou pakket op te volgen.
+                                </div>
+                            </div>
+
+                            <div class="col-6">
+                                <label for="address" class="form-label">Adres</label>
+                                <input type="text" class="form-control" id="address" placeholder="Hoofdlaan 24" required>
+                                <div class="invalid-feedback">
+                                    Voeg uw bezorgadres toe.
+                                </div>
+                            </div>
+
+                            <div class="col-6">
+                                <label for="address2" class="form-label">Adres 2 <span class="text-muted">(Optioneel)</span></label>
+                                <input type="text" class="form-control" id="address2" placeholder="Apartement of Huis">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="country" class="form-label">Land</label>
+                                <select class="form-select" id="country" required>
+                                    <option value="">Kies...</option>
+                                    <option>België</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Kies een geldig land.
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="state" class="form-label">Provincie</label>
+                                <select class="form-select" id="state" required>
+                                    <option value="">Kies...</option>
+                                    <option>Limburg</option>
+                                    <option>Antwerpen</option>
+                                    <option>Henegouwen</option>
+                                    <option>Luik</option>
+                                    <option>Luxemburg</option>
+                                    <option>Namen</option>
+                                    <option>Oost-Vlaanderen</option>
+                                    <option>West-Vlaanderen</option>
+                                    <option>Vlaams-Brabant</option>
+                                    <option>Waals-Brabant</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Kies een geldige provincie.
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="zip" class="form-label">Zip</label>
+                                <input type="text" class="form-control" id="zip" placeholder="" required>
+                                <div class="invalid-feedback">
+                                    Zip code verplicht.
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="same-address">
+                            <label class="form-check-label" for="same-address">Bezorgadres is hetzelfde als het facturatieadres.</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="save-info">
+                            <label class="form-check-label" for="save-info">Hou deze informatie bij voor volgende keer.</label>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <h4 class="mb-3">Betaling</h4>
+
+                        <div class="my-3">
+                            <div class="form-check">
+                                <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                                <label class="form-check-label" for="credit">Credit kaart</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                                <label class="form-check-label" for="debit">Debit kaart</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                                <label class="form-check-label" for="paypal">PayPal</label>
+                            </div>
+                        </div>
+
+                        <div class="row gy-3">
+                            <div class="col-md-6">
+                                <label for="cc-name" class="form-label">Naam op de kaart</label>
+                                <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                                <small class="text-muted">Volledige naam zoals weergegeven op de kaart.</small>
+                                <div class="invalid-feedback">
+                                    Naam op de kaart verplicht.
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="cc-number" class="form-label">Credit kaart nummer</label>
+                                <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                                <div class="invalid-feedback">
+                                    Credit kaart nummer is verplicht.
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <label for="cc-expiration" class="form-label">Vervaldatum</label>
+                                <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                                <div class="invalid-feedback">
+                                    Vervaldatum is verplicht.
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <label for="cc-cvv" class="form-label">CVV</label>
+                                <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                                <div class="invalid-feedback">
+                                    Veiligheidscode verplicht.
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="my-5">
+                        <button class="w-50 btn btn-primary btn-lg" type="submit">Ga verder naar checkout</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+</section>
 
 <section id="footer-section">
     <footer class="footer mt-auto p-3 text-center">
@@ -53,5 +269,263 @@
         </div>
     </footer>
 </section>
+
+<!--<section id="nav-bar-section">-->
+<!--    <nav class="navbar navbar-expand-lg fixed-top">-->
+<!--        <div class="container-fluid p-2">-->
+<!--            <a class="navbar-brand" href="#"><img src="images/Secondair%20logo%20Prim%20Color.svg" alt="Logo_KZ"></a>-->
+<!--            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--                <span class="navbar-toggler-icon"></span>-->
+<!--            </button>-->
+<!--            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">-->
+<!--                <ul class="navbar-nav">-->
+<!--                    <li class="nav-item">-->
+<!--                        <a class="nav-link" href="index.html">Home</a>-->
+<!--                    </li>-->
+<!--                    <li class="nav-item">-->
+<!--                        <a class="nav-link" href="about.html">Over Ons</a>-->
+<!--                    </li>-->
+<!--                    <li class="nav-item">-->
+<!--                        <a class="nav-link" href="producten.html">Producten</a>-->
+<!--                    </li>-->
+<!--                    <li class="nav-item">-->
+<!--                        <a class="nav-link" href="faq.html">FAQ</a>-->
+<!--                    </li>-->
+<!--                    <li class="nav-item">-->
+<!--                        <a class="nav-link" href="contact.html">Contact</a>-->
+<!--                    </li>-->
+<!--                    <li class="nav-item">-->
+<!--                        <a class="nav-link shopping-cart" href="#"><img src="images/Shoppingcart-icon.svg" alt="Shopping-cart"></a>-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </nav>-->
+<!--</section>-->
+
+<!--<section class="container-md" id="checkout-section">-->
+<!--    <div class="container-md">-->
+<!--        <main>-->
+<!--            <div class="row g-5">-->
+<!--                <div class="col-md-5 col-lg-4 order-md-last">-->
+<!--                    <h4 class="d-flex justify-content-between align-items-center mb-3">-->
+<!--                        <span class="text-primary">Uw Winkelwagen!</span>-->
+<!--                        <span class="badge bg-primary rounded-pill">3</span>-->
+<!--                    </h4>-->
+<!--                    <ul class="list-group mb-3">-->
+<!--                        <li class="list-group-item d-flex justify-content-between lh-sm">-->
+<!--                            <div>-->
+<!--                                <h6 class="my-0">Product naam</h6>-->
+<!--                                <small class="text-muted">Korte uitleg</small>-->
+<!--                            </div>-->
+<!--                            <span class="text-muted">€12</span>-->
+<!--                        </li>-->
+<!--                        <li class="list-group-item d-flex justify-content-between lh-sm">-->
+<!--                            <div>-->
+<!--                                <h6 class="my-0">Tweede product</h6>-->
+<!--                                <small class="text-muted">Korte uitleg</small>-->
+<!--                            </div>-->
+<!--                            <span class="text-muted">€8</span>-->
+<!--                        </li>-->
+<!--                        <li class="list-group-item d-flex justify-content-between lh-sm">-->
+<!--                            <div>-->
+<!--                                <h6 class="my-0">Derde item</h6>-->
+<!--                                <small class="text-muted">Korte uitleg</small>-->
+<!--                            </div>-->
+<!--                            <span class="text-muted">€5</span>-->
+<!--                        </li>-->
+<!--                        <li class="list-group-item d-flex justify-content-between bg-light">-->
+<!--                            <div class="text-success">-->
+<!--                                <h6 class="my-0">Promo code</h6>-->
+<!--                                <small>KLEINEZORG2023</small>-->
+<!--                            </div>-->
+<!--                            <span class="text-success">−€5</span>-->
+<!--                        </li>-->
+<!--                        <li class="list-group-item d-flex justify-content-between">-->
+<!--                            <span>Totaal (EUR)</span>-->
+<!--                            <strong>€20</strong>-->
+<!--                        </li>-->
+<!--                    </ul>-->
+
+<!--                    <form class="card p-2">-->
+<!--                        <div class="input-group">-->
+<!--                            <input type="text" class="form-control" placeholder="Promo code">-->
+<!--                            <button type="submit" class="btn btn-secondary">Redeem</button>-->
+<!--                        </div>-->
+<!--                    </form>-->
+<!--                </div>-->
+<!--                <div class="col-md-7 col-lg-8">-->
+<!--                    <h4 class="mb-3">Facturatie Adres</h4>-->
+<!--                    <form class="needs-validation" novalidate>-->
+<!--                        <div class="row g-3">-->
+<!--                            <div class="col-sm-6">-->
+<!--                                <label for="firstName" class="form-label">Voornaam</label>-->
+<!--                                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>-->
+<!--                                <div class="invalid-feedback">-->
+<!--                                    Geef een geldige voornaam in.-->
+<!--                                </div>-->
+<!--                            </div>-->
+
+<!--                            <div class="col-sm-6">-->
+<!--                                <label for="lastName" class="form-label">Achternaam</label>-->
+<!--                                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>-->
+<!--                                <div class="invalid-feedback">-->
+<!--                                    Geef een geldige achternaam in.-->
+<!--                                </div>-->
+<!--                            </div>-->
+
+<!--                            <div class="col-12">-->
+<!--                                <label for="username" class="form-label">Gebruikersnaam</label>-->
+<!--                                <div class="input-group has-validation">-->
+<!--                                    <span class="input-group-text">@</span>-->
+<!--                                    <input type="text" class="form-control" id="username" placeholder="Gebruikersnaam" required>-->
+<!--                                    <div class="invalid-feedback">-->
+<!--                                        Gebruikersnaam nodig.-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+
+<!--                            <div class="col-12">-->
+<!--                                <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>-->
+<!--                                <input type="email" class="form-control" id="email" placeholder="email@example.com">-->
+<!--                                <div class="invalid-feedback">-->
+<!--                                    Vul een geldig e-mail adres in voor jou pakket op te volgen.-->
+<!--                                </div>-->
+<!--                            </div>-->
+
+<!--                            <div class="col-12">-->
+<!--                                <label for="address" class="form-label">Adres</label>-->
+<!--                                <input type="text" class="form-control" id="address" placeholder="Hoofdlaan 24" required>-->
+<!--                                <div class="invalid-feedback">-->
+<!--                                    Voeg uw bezorgadres toe.-->
+<!--                                </div>-->
+<!--                            </div>-->
+
+<!--                            <div class="col-12">-->
+<!--                                <label for="address2" class="form-label">Adres 2 <span class="text-muted">(Optioneel)</span></label>-->
+<!--                                <input type="text" class="form-control" id="address2" placeholder="Apartement of Huis">-->
+<!--                            </div>-->
+
+<!--                            <div class="col-md-5">-->
+<!--                                <label for="country" class="form-label">Land</label>-->
+<!--                                <select class="form-select" id="country" required>-->
+<!--                                    <option value="">Kies...</option>-->
+<!--                                    <option>België</option>-->
+<!--                                </select>-->
+<!--                                <div class="invalid-feedback">-->
+<!--                                    Kies een geldig land.-->
+<!--                                </div>-->
+<!--                            </div>-->
+
+<!--                            <div class="col-md-4">-->
+<!--                                <label for="state" class="form-label">Provincie</label>-->
+<!--                                <select class="form-select" id="state" required>-->
+<!--                                    <option value="">Kies...</option>-->
+<!--                                    <option>Limburg</option>-->
+<!--                                    <option>Antwerpen</option>-->
+<!--                                    <option>Henegouwen</option>-->
+<!--                                    <option>Luik</option>-->
+<!--                                    <option>Luxemburg</option>-->
+<!--                                    <option>Namen</option>-->
+<!--                                    <option>Oost-Vlaanderen</option>-->
+<!--                                    <option>West-Vlaanderen</option>-->
+<!--                                    <option>Vlaams-Brabant</option>-->
+<!--                                    <option>Waals-Brabant</option>-->
+<!--                                </select>-->
+<!--                                <div class="invalid-feedback">-->
+<!--                                    Kies een geldige provincie.-->
+<!--                                </div>-->
+<!--                            </div>-->
+
+<!--                            <div class="col-md-3">-->
+<!--                                <label for="zip" class="form-label">Zip</label>-->
+<!--                                <input type="text" class="form-control" id="zip" placeholder="" required>-->
+<!--                                <div class="invalid-feedback">-->
+<!--                                    Zip code verplicht.-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+
+<!--                        <hr class="my-4">-->
+
+<!--                        <div class="form-check">-->
+<!--                            <input type="checkbox" class="form-check-input" id="same-address">-->
+<!--                            <label class="form-check-label" for="same-address">Bezorgadres is hetzelfde als het facturatieadres.</label>-->
+<!--                        </div>-->
+
+<!--                        <div class="form-check">-->
+<!--                            <input type="checkbox" class="form-check-input" id="save-info">-->
+<!--                            <label class="form-check-label" for="save-info">Hou deze informatie bij voor volgende keer.</label>-->
+<!--                        </div>-->
+
+<!--                        <hr class="my-4">-->
+
+<!--                        <h4 class="mb-3">Betaling</h4>-->
+
+<!--                        <div class="my-3">-->
+<!--                            <div class="form-check">-->
+<!--                                <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>-->
+<!--                                <label class="form-check-label" for="credit">Credit kaart</label>-->
+<!--                            </div>-->
+<!--                            <div class="form-check">-->
+<!--                                <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>-->
+<!--                                <label class="form-check-label" for="debit">Debit kaart</label>-->
+<!--                            </div>-->
+<!--                            <div class="form-check">-->
+<!--                                <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>-->
+<!--                                <label class="form-check-label" for="paypal">PayPal</label>-->
+<!--                            </div>-->
+<!--                        </div>-->
+
+<!--                        <div class="row gy-3">-->
+<!--                            <div class="col-md-6">-->
+<!--                                <label for="cc-name" class="form-label">Naam op de kaart</label>-->
+<!--                                <input type="text" class="form-control" id="cc-name" placeholder="" required>-->
+<!--                                <small class="text-muted">Volledige naam zoals weergegeven op de kaart.</small>-->
+<!--                                <div class="invalid-feedback">-->
+<!--                                    Naam op de kaart verplicht.-->
+<!--                                </div>-->
+<!--                            </div>-->
+
+<!--                            <div class="col-md-6">-->
+<!--                                <label for="cc-number" class="form-label">Credit kaart nummer</label>-->
+<!--                                <input type="text" class="form-control" id="cc-number" placeholder="" required>-->
+<!--                                <div class="invalid-feedback">-->
+<!--                                    Credit kaart nummer is verplicht.-->
+<!--                                </div>-->
+<!--                            </div>-->
+
+<!--                            <div class="col-md-3">-->
+<!--                                <label for="cc-expiration" class="form-label">Vervaldatum</label>-->
+<!--                                <input type="text" class="form-control" id="cc-expiration" placeholder="" required>-->
+<!--                                <div class="invalid-feedback">-->
+<!--                                    Vervaldatum is verplicht.-->
+<!--                                </div>-->
+<!--                            </div>-->
+
+<!--                            <div class="col-md-3">-->
+<!--                                <label for="cc-cvv" class="form-label">CVV</label>-->
+<!--                                <input type="text" class="form-control" id="cc-cvv" placeholder="" required>-->
+<!--                                <div class="invalid-feedback">-->
+<!--                                    Veiligheidscode verplicht.-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <hr class="my-4">-->
+<!--                        <button class="w-50 btn btn-primary btn-lg" type="submit">Ga verder naar checkout</button>-->
+<!--                    </form>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </main>-->
+<!--    </div>-->
+<!--</section>-->
+
+<!--<section id="footer-section">-->
+<!--    <footer class="footer mt-auto p-3 text-center">-->
+<!--        <div class="container">-->
+<!--            <span class="text-footer font-title">© 2023 Kleine Zorg. All rights reserved.</span>-->
+<!--        </div>-->
+<!--    </footer>-->
+<!--</section>-->
 </body>
 </html>
