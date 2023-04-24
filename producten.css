@@ -1,32 +1,112 @@
 /* -- PRODUCT SECTION -- */
+
 #product-section {
     min-height: 100vh;
 }
-.card.purpleBorder {
-    border-color: #8787FF;
-    border-width: 4px;
+
+.border-purple {
+    border-color: #8787FF !important;
 }
-.card.orangeBorder {
-    border-color: #FF9B00;
-    border-width: 4px;
+
+.border-orange {
+    border-color: #FF9B00 !important;
 }
-.card-header h4 {
-    text-align: center;
+
+.border-orange .btn-outline-primary {
+    border-color: #8B17FF;
+    border-width: 3px;
+    color: #2F1966;
 }
-.btn-primary {
-    background-color: var(--primary-color-purple) !important;
-    border: 2px solid var(--secondary-color-dark-blue) !important;
+
+.border-orange .btn-outline-primary:hover {
+    border-color: #2F1966;
+    border-width: 3px;
+    color: white;
+    background-color: #2F1966;
 }
-.btn-primary:hover {
-    scale: 1.04 !important;
-    transition: all 500ms ease-in !important;
+
+.card.border-purple {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
 }
-.btn-outline-primary {
-    color: var(--primary-color-purple) !important;
-    border: 2px solid var(--secondary-color-dark-blue) !important;
+
+.card.border-purple::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 20px;
+    background-color: #8787FF;
 }
-.btn-outline-primary:hover {
+
+.card.border-orange {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card.border-orange::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 20px;
+    background-color: #FF9B00;
+}
+
+#producten_section {
+    min-height: 100vh;
+}
+
+#card_background {
+    background: #FAF7F5;
+}
+
+#card_background2 {
+    background: #FAF7F5;
+}
+
+.btn.btn-outline-success {
+    color: #2F1966;
+    border-color: #2F1966;
+    border-width: 2px;
+}
+
+
+.btn.btn-outline-success:hover {
+    color: #2F1966 !important;
+    border-color: #2F1966 !important;
     background-color: transparent !important;
-    scale: 1.04 !important;
-    transition: all 500ms ease-in !important;
+}
+
+
+.btn.btn-outline-success:active {
+    color: #2F1966 !important;
+    border-color: #2F1966 !important;
+    background-color: transparent !important;
+}
+
+.btn.btn-danger {
+    background-color: #2F1966;
+    border-color: #2F1966;
+}
+
+.btn.btn-danger:hover {
+    background-color: #8B17FF;
+    border-color: #8B17FF;
+}
+
+.btn.btn-danger:active {
+    background-color: #8B17FF !important;
+}
+#tweede_button {
+    width: 150px;
+    height: 48px;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
