@@ -96,7 +96,7 @@
 
 .btn.btn-danger:hover {
     background-color: #8B17FF;
-    border-color: #8B17FF;
+    border-color: #8B17FF
 }
 
 .btn.btn-danger:active {
@@ -109,4 +109,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.btn-danger {
+    border-color: #fff;
+}
+
+.title-color {
+    color: #2F1966;
 }
