@@ -28,3 +28,16 @@
     background-color: #faf6f4;
 }
 
+
+@media screen and (max-width: 736px) {
+    .visie-wrapper {
+        margin-top: -1200px;
+    }
+
+    .missie-wrapper {
+        margin-bottom: 900px;
+    }
+    .visie-wrapper .mobile, .missie-wrapper .mobile {
+        text-align: left !important;
+    }
+}
