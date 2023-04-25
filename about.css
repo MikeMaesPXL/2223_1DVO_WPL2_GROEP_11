@@ -2,12 +2,12 @@
 .purple-blob {
     background: url("images/Vorm2.svg") no-repeat;
     background-size: 53% 60%;
-    background-position: 160%;
+    background-position: 160% 90%;
 }
 .orange-blob {
     background: url("images/Vorm1.svg") no-repeat;
     background-size: 53% 60%;
-    background-position: -60%;
+    background-position: -60% 135%;
 }
 #about-info-section, #about-mv-section {
     min-height: 100vh;
