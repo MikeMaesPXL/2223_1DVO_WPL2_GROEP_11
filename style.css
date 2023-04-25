@@ -60,7 +60,7 @@ body::-webkit-scrollbar{
 }
 .shopping-cart img {
     height: 20px;
-    color: var(--primary-color-purple);
+    color: var(--primary-color-purple) !important;
 }
 .nav-link:hover {
     color: var(--secondary-color-orange) !important;
