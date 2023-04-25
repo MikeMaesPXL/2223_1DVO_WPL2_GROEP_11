@@ -1,12 +1,12 @@
 /*!* -- INFO & MISSION, VISION -- *!*/
-#purple-blob {
-    background: url("images/Vorm2.svg") no-repeat center right;
-    background-size: 50% 35%;
+.purple-blob {
+    background: url("images/Vorm2.svg") no-repeat;
+    background-size: 53% 60%;
     background-position: 160%;
 }
-#orange-blob {
-    background: url("images/Vorm1.svg") no-repeat bottom left;
-    background-size: 50% 30%;
+.orange-blob {
+    background: url("images/Vorm1.svg") no-repeat;
+    background-size: 53% 60%;
     background-position: -60%;
 }
 #about-info-section, #about-mv-section {
