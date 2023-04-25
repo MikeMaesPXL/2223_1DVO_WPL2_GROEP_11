@@ -7,8 +7,11 @@
     <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="https://use.typekit.net/hew7akf.css">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+            crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"></script>
 </head>
 <body>
@@ -16,7 +19,8 @@
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid p-2">
             <a class="navbar-brand" href="#"><img src="images/Secondair%20logo%20Prim%20Color.svg" alt="Logo_KZ"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -37,7 +41,8 @@
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link shopping-cart" href="#"><img src="images/Shoppingcart-icon.svg" alt="Shopping-cart"></a>
+                        <a class="nav-link shopping-cart" href="#"><img src="images/Shoppingcart-icon.svg"
+                                                                        alt="Shopping-cart"></a>
                     </li>
                 </ul>
             </div>
@@ -46,58 +51,70 @@
 </section>
 
 <section class="p-5" id="contactsection">
-<div class="container-md mt-5 shadow">
-    <div class="row">
-        <div class="col-md-4 bg-primary p-5 text-white order-sm-first order-last">
-            <h2>Kleine Zorg</h2>
-            <p>We staan open voor alle suggesties of gewoon voor een praatje.</p>
-            <div class="d-flex mt-2">
-                <i class="bi bi-geo-alt"></i>
-                <p class="mt-3 ms-3">Address : Road 198 West 21th Street, Suite 721 Singapor WW 10016</p>
+    <div class="container-md mt-5">
+        <div class="row">
+            <div class="col-md-4 bg-custom p-5 text-white order-sm-first order-last shadow">
+                <h2 class="text-center mb-5">Contact informatie</h2>
+                <p>+324 45 24 12 64</p>
+                <p>kleine@zorg.be</p>
+                <p>Kiezelstraat 22 <br>
+                    3500 Hasselt, Limburg <br>
+                    Belgie</p>
+                <!---
+                <div class="d-flex mt-2">
+                    <i class="bi bi-geo-alt"></i>
+                    <p class="mt-3 ms-3">temp</p>
+                </div>
+                <div class="d-flex mt-2">
+                    <i class="bi bi-telephone-forward"></i>
+                    <p class="mt-4 ms-3">temp</p>
+                </div>
+                <div class="d-flex mt-2">
+                    <i class="bi bi-envelope"></i>
+                    <p class="mt-4 ms-3">temp</p>
+                </div>
+                <div class="d-flex mt-2">
+                    <i class="bi bi-youtube"></i>
+                    <p class="mt-4 ms-3">temp</p>
+                </div>
+                --->
+                <div class="row mt-5">
+                    <div class="col-md-12">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30972.071738336923!2d5.3385042313606!3d50.923019482271396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0a1f430fcf33f%3A0x1d1c52078b73c9b7!2sHasselt%2C%20Belgium!5e0!3m2!1sen!2sus!4v1556861621343!5m2!1sen!2sus"
+                                width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
             </div>
-            <div class="d-flex mt-2">
-                <i class="bi bi-telephone-forward"></i>
-                <p class="mt-4 ms-3">Phone : 8888888888</p>
+            <div class="col-md-8 p-5 backroundSide">
+                <h2>Laat ons een bericht achter!</h2>
+                <form class="row g-3 contactForm mt-4">
+                    <div class="col-md-6">
+                        <label for="inputNaam" class="form-label">Naam</label>
+                        <input type="text" class="form-control" id="inputNaam" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputAchternaam" class="form-label">Achternaam</label>
+                        <input type="text" class="form-control" id="inputAchternaam" required>
+                    </div>
+                    <div class="col-6">
+                        <label for="inputAddress" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputAddress" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputGsm" class="form-label">GSM Nummer</label>
+                        <input type="number" class="form-control" id="inputGsm">
+                    </div>
+                    <div class="col-md-6">
+                        <textarea cols="30" rows="5" name="message" style="resize: none; background: transparent"
+                                  placeholder="Type your message here..."></textarea>
+                    </div>
+                    <div class="col-12 mt-5">
+                        <button type="submit" class="btn btn-danger">Verstuur bericht</button>
+                    </div>
+                </form>
             </div>
-            <div class="d-flex mt-2">
-                <i class="bi bi-envelope"></i>
-                <p class="mt-4 ms-3">Email : contactform@gmail.com</p>
-            </div>
-            <div class="d-flex mt-2">
-                <i class="bi bi-youtube"></i>
-                <p class="mt-4 ms-3">Channel : www.contactform.com/</p>
-            </div>
-        </div>
-        <div class="col-md-8 p-5 ">
-            <h2>Laat ons een bericht achter!</h2>
-            <form class="row g-3 contactForm mt-4">
-                <div class="col-md-6">
-                    <label for="inputNaam" class="form-label">Naam</label>
-                    <input type="text" class="form-control" id="inputNaam" required>
-                </div>
-                <div class="col-md-6">
-                    <label for="inputPassword4" class="form-label">Achternaam</label>
-                    <input type="text" class="form-control" id="inputAchternaam" required>
-                </div>
-                <div class="col-6">
-                    <label for="inputAddress" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="inputAddress" required>
-                </div>
-                <div class="col-md-6">
-                    <label for="inputGsm" class="form-label">GSM Nummer</label>
-                    <input type="number" class="form-control" id="inputGsm">
-                </div>
-                <div class="col-md-6">
-                    <textarea cols="30" rows="5" name="message" placeholder="Type your message here..."></textarea>
-                    <input type="text" class="form-control" id="inputBericht" required>
-                </div>
-                <div class="col-12">
-                    <button type="submit" class="btn btn-primary mt-3">Verstuur bericht</button>
-                </div>
-            </form>
         </div>
     </div>
-</div>
 </section>
 
 
