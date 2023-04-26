@@ -73,3 +73,8 @@ body::-webkit-scrollbar{
 .text-footer {
     color: var(--tertiary-color-white);
 }
+@media screen and (max-width: 736px) {
+    .navbar-brand {
+        padding-left: 20px !important;
+    }
+}
