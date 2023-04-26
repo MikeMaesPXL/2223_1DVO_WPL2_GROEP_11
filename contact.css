@@ -1,39 +1,20 @@
 #contactsection {
     min-height: 100vh;
 }
-
 .bg-custom {
     background: #8787FF;
 }
-
 .backroundSide {
     background: #FAF7F5;
 }
-
-input[type=text] {
+input[type=text], input[type=email], input[type=tel] {
     background: transparent;
     border: none;
-    border-bottom: 2px solid #D9D9D9;
+    /*border-bottom: 2px solid #D9D9D9;*/
+    border-bottom: 2px inset #1a1a1a;
     border-radius: 0;
     width: 89.4%;
 }
-
-input[type=email] {
-    background: transparent;
-    border: none;
-    border-bottom: 2px solid #D9D9D9;
-    border-radius: 0;
-    width: 89.4%;
-}
-
-input[type=number] {
-    background: transparent;
-    border: none;
-    border-bottom: 2px solid #D9D9D9;
-    border-radius: 0;
-    width: 89.4%;
-}
-
 .btn.btn-danger {
     background-color: #2F1966;
     border-color: #2F1966;
@@ -42,31 +23,34 @@ input[type=number] {
     height: 50px;
     font-size: 18px;
 }
-
 .btn.btn-danger:hover {
     background-color: #8B17FF;
     border-color: #8B17FF
 }
-
 .btn.btn-danger:active {
     background-color: #8B17FF !important;
 }
-
 #centered  {
     margin-top: 100px;
 }
-
 .shadow-lg {
     z-index: 10;
 }
-
 .sizing {
     display: flex;
     margin-bottom: 75px;
 }
-
-
 .sizing2 {
     margin-top: -75px !important;
 }
-
+::placeholder {
+    opacity: 0.5 !important;
+}
+input:active, input:focus {
+    border-bottom: 1px solid #2F1966 !important;
+    background-color: #faf6f4 !important;
+}
+.form-control:focus, .textarea:focus {
+    border-color: #8787FF !important;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(135, 135, 255, 0.425) !important;
+}

@@ -77,4 +77,7 @@ body::-webkit-scrollbar{
     .navbar-brand {
         padding-left: 20px !important;
     }
+    .navbar-brand img {
+        height: 25px !important;
+    }
 }
