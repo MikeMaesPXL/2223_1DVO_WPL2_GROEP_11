@@ -1,7 +1,7 @@
 :root {
     --primary-color-purple: #8b17ff;
     --secondary-color-orange: #ff9b00;
-    --secondary-color-dark-blue: #000000;
+    --secondary-color-dark-blue: #2F1966;
     --secondary-color-light-blue: #8787ff;
     --secondary-color-white-grey: #faf6f4;
 
@@ -47,7 +47,8 @@ body::-webkit-scrollbar{
 }
 .nav-item a {
     color: var(--primary-color-purple);
-    font-weight: 500;
+    font-weight: 600;
+    font-family: var(--font-family-title);
 }
 .navbar-brand {
     padding-left: 7%;
