@@ -73,6 +73,53 @@ body::-webkit-scrollbar{
 .text-footer {
     color: var(--tertiary-color-white);
 }
+/* -- WINKELMAND -- */
+.offcanvas {
+    height: 55% !important;
+}
+.offcanvas-header {
+    background-color: #faf6f4 !important;
+    padding-top: 21px !important;
+    padding-bottom: 21px !important;
+}
+.offcanvas-body {
+    background-color: #faf6f4 !important;
+}
+.offcanvas-body h1 {
+    font-size: 35px;
+}
+#seperator {
+    width: 80%;
+}
+#item-wrapper {
+    width: 90%;
+}
+.picture-shopping-cart {
+    width: 80px;
+    height: 80px;
+}
+.picture-shopping-cart img {
+    object-fit: cover;
+    width: 80px;
+    height: 80px;
+}
+.item-text {
+    font-size: 14px !important;
+}
+.item-shopping-cart p {
+    height: 24px;
+}
+input[type=number] {
+    background: transparent;
+    border: none;
+    width: 60px;
+}
+.form-control:focus {
+    border-color: #8787FF !important;
+    background-color: #faf6f4 !important;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0), 0 0 8px rgba(0, 0, 0, 0) !important;
+}
+/* -- MEDIA QUERIES -- */
 @media screen and (max-width: 736px) {
     .navbar-brand {
         padding-left: 20px !important;
