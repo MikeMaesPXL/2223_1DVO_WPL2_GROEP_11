@@ -22,16 +22,16 @@ body::-webkit-scrollbar{
 }
 /* -- Fonts and colors in classes -- */
 .font-title{
-    font-family: var(--font-family-title);
+    font-family: var(--font-family-title) !important;
 }
 .font-body {
-    font-family: var(--font-family-body);
+    font-family: var(--font-family-body) !important;
 }
 .header-text-color {
-    color: var(--secondary-color-dark-blue);
+    color: var(--secondary-color-dark-blue) !important;
 }
 .body-text-color {
-    color: var(--body-text-color);
+    color: var(--body-text-color) !important;
 }
 /* -- NAV -- */
 #nav-bar {

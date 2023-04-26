@@ -12,3 +12,12 @@
     background: repeating-linear-gradient(90deg, #6363ff,#6363FF 24px,transparent 24px,transparent 50px);
     width: 80%;
 }
+.accordion {
+    width: 60% !important;
+}
+.accordion-item {
+    padding: 10px;
+}
+.faq-title {
+    font-size: 30px;
+}
