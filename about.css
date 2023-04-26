@@ -23,12 +23,6 @@
 .visie-wrapper {
     margin-top: 250px;
 }
-/* -- Winkelkar -- */
-.canvas-winkelkar {
-    background-color: #faf6f4;
-}
-
-
 @media screen and (max-width: 736px) {
     .visie-wrapper {
         margin-top: -1200px;
