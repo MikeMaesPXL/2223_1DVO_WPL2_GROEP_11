@@ -37,9 +37,12 @@
         margin-bottom: 900px;
     }
     .visie-wrapper .mobile, .missie-wrapper .mobile {
-        text-align: left !important;
+        text-align: justify !important;
     }
     .purple-blob {
-        background-position: 160% 30%;
+        background-position: 160% 140%;
+    }
+    .orange-blob {
+        background-position: -60% 160%;
     }
 }
