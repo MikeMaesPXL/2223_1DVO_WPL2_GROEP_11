@@ -21,3 +21,11 @@
 .faq-title {
     font-size: 30px;
 }
+@media screen and (max-width: 736px) {
+    .accordion {
+        width: 80% !important;
+    }
+    .faq-title {
+        width: 80% !important;
+    }
+}

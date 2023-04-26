@@ -1,36 +1,29 @@
 /* -- PRODUCT SECTION -- */
-
 #product-section {
     min-height: 100vh;
 }
-
 .border-purple {
     border-color: #8787FF !important;
 }
-
 .border-orange {
     border-color: #FF9B00 !important;
 }
-
 .border-orange .btn-outline-primary {
     border-color: #8B17FF;
     border-width: 3px;
     color: #2F1966;
 }
-
 .border-orange .btn-outline-primary:hover {
     border-color: #2F1966;
     border-width: 3px;
     color: white;
     background-color: #2F1966;
 }
-
 .card.border-purple {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
 }
-
 .card.border-purple::before {
     content: "";
     position: absolute;
@@ -40,13 +33,11 @@
     height: 20px;
     background-color: #8787FF;
 }
-
 .card.border-orange {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
 }
-
 .card.border-orange::before {
     content: "";
     position: absolute;
@@ -56,49 +47,38 @@
     height: 20px;
     background-color: #FF9B00;
 }
-
 #producten_section {
     min-height: 100vh;
 }
-
 #card_background {
     background: #FAF7F5;
 }
-
 #card_background2 {
     background: #FAF7F5;
 }
-
 .btn.btn-outline-success {
     color: #2F1966;
     border-color: #2F1966;
     border-width: 2px;
 }
-
-
 .btn.btn-outline-success:hover {
     color: #2F1966 !important;
     border-color: #2F1966 !important;
     background-color: transparent !important;
 }
-
-
 .btn.btn-outline-success:active {
     color: #2F1966 !important;
     border-color: #2F1966 !important;
     background-color: transparent !important;
 }
-
 .btn.btn-danger {
     background-color: #2F1966;
     border-color: #2F1966;
 }
-
 .btn.btn-danger:hover {
     background-color: #8B17FF;
     border-color: #8B17FF
 }
-
 .btn.btn-danger:active {
     background-color: #8B17FF !important;
 }
@@ -110,11 +90,17 @@
     justify-content: center;
     align-items: center;
 }
-
 .btn-danger {
     border-color: #fff;
 }
-
 .title-color {
     color: #2F1966;
+}
+@media screen and (max-width: 736px) {
+    .card-basis-pakket {
+        padding: 100px 40px 20px 40px !important;
+    }
+    .card-plus-pakket {
+        padding: 0 40px 40px 40px !important;
+    }
 }
