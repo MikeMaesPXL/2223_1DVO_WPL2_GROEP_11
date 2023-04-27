@@ -75,7 +75,7 @@ body::-webkit-scrollbar{
 }
 /* -- WINKELMAND -- */
 .offcanvas {
-    height: 55% !important;
+    height: 65% !important;
 }
 .offcanvas-header {
     background-color: #faf6f4 !important;
@@ -88,7 +88,7 @@ body::-webkit-scrollbar{
 .offcanvas-body h1 {
     font-size: 35px;
 }
-#seperator {
+.seperator {
     width: 80%;
 }
 #item-wrapper {
@@ -119,6 +119,20 @@ input[type=number] {
     background-color: #faf6f4 !important;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0), 0 0 8px rgba(0, 0, 0, 0) !important;
 }
+.btn.btn-primary {
+    width: 40% !important;
+    background-color: #2F1966 !important;
+}
+.btn.btn-primary a {
+    text-decoration: none !important;
+    color: #fff !important;
+}
+.btn.btn-primary:hover {
+    background-color: #8B17FF !important;
+}
+#checkout-button {
+    padding-top: 40px !important;
+}
 /* -- MEDIA QUERIES -- */
 @media screen and (max-width: 736px) {
     .navbar-brand {
@@ -126,5 +140,8 @@ input[type=number] {
     }
     .navbar-brand img {
         height: 25px !important;
+    }
+    .offcanvas-header, .offcanvas-body {
+        width: 100% !important;
     }
 }
