@@ -21,7 +21,7 @@ span.badge.bg-primary.rounded-pill {
 }
 
 @media screen and (max-width: 736px) {
-    .btn.btn-primary {
+    #betalen-button {
         width: 100% !important;
     }
 }
