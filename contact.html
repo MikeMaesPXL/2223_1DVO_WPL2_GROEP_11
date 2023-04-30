@@ -14,6 +14,7 @@
             integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -57,7 +58,7 @@
 <section class="p-5" id="contactsection">
     <div class="container-md mt-5">
         <div class="row" id="centered">
-            <div class="col-md-4 bg-custom p-5 text-white order-sm-first order-last shadow-lg">
+            <div class="col-md-4 order-md-first bg-custom p-5 text-white shadow-lg">
                 <h2 class="text-center mb-5 font-title">Contact informatie</h2>
                 <div class="font-body">
                     <p>+3204 45 24 12 64</p>
@@ -66,25 +67,6 @@
                         3500 Hasselt, Limburg <br>
                         Belgie</p>
                 </div>
-
-                <!---
-            <div class="d-flex mt-2">
-                <i class="bi bi-geo-alt"></i>
-                <p class="mt-3 ms-3">temp</p>
-            </div>
-            <div class="d-flex mt-2">
-                <i class="bi bi-telephone-forward"></i>
-                <p class="mt-4 ms-3">temp</p>
-            </div>
-            <div class="d-flex mt-2">
-                <i class="bi bi-envelope"></i>
-                <p class="mt-4 ms-3">temp</p>
-            </div>
-            <div class="d-flex mt-2">
-                <i class="bi bi-youtube"></i>
-                <p class="mt-4 ms-3">temp</p>
-            </div>
-            --->
                 <div class="row mt-5">
                     <div class="col-md-12">
                         <iframe
@@ -94,34 +76,34 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-8 p-5 backroundSide">
+            <div class="col-md-8 p-5 order-md-last backroundSide">
                 <h2 class="font-title">Laat ons een bericht achter!</h2>
                 <form class="row g-3 contactForm mt-4">
                     <div class="sizing font-body">
                         <div class="col-md-6">
                             <label for="inputNaam" class="form-label">Naam</label>
-                            <input type="text" class="form-control" id="inputNaam" required placeholder="Emile">
+                            <input type="text" class="form-control" id="inputNaam" required placeholder="John">
                         </div>
                         <div class="col-md-6">
                             <label for="inputAchternaam" class="form-label">Achternaam</label>
-                            <input type="text" class="form-control" id="inputAchternaam" required placeholder="Maes">
+                            <input type="text" class="form-control" id="inputAchternaam" required placeholder="Doe">
                         </div>
                     </div>
                     <div class="sizing font-body">
-                        <div class="col-6">
-                            <label for="inputAddress" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="inputAddress" required placeholder="emilemaes@kleinezorg.com">
+                        <div class="col-md-6">
+                            <label for="inputEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control email" id="inputEmail" required
+                                   placeholder="JohnDoe@kleinezorg.com">
                         </div>
                         <div class="col-md-6">
                             <label for="inputGsm" class="form-label">GSM Nummer</label>
-                            <input type="tel" class="form-control" id="inputGsm" placeholder="+32 49287713">
+                            <input type="tel" class="form-control" id="inputGsm" placeholder="+32 49 28 77 13">
                         </div>
                     </div>
                     <div class="font-body">
                         <div class="col-md-6">
-                                <textarea class="p-1" cols="30" rows="5" name="message"
-                                          style="resize: none; background: transparent; width: 350px; border: 2px solid #D9D9D9;                                    "
-                                          placeholder="Type hier uw bericht..."></textarea>
+                            <textarea class="p-1 textarea-style" cols="30" rows="5" name="message"
+                                      placeholder="Type hier uw bericht..."></textarea>
                         </div>
                     </div>
                     <div class="col-12 sizing2 font-body pt-3">
@@ -160,7 +142,7 @@
                         <p class="item-text body-text-color font-body text-center">KZ Basis Pakket</p>
                     </div>
                     <div class="item-shopping-cart mx-3">
-                        <input type="number" class="form-control" />
+                        <input type="number" class="form-control"/>
                     </div>
                 </div>
                 <div class="d-flex justify-content-center align-items-center mt-3">
@@ -171,7 +153,7 @@
                         <p class="item-text body-text-color font-body text-center">KZ plus Pakket</p>
                     </div>
                     <div class="item-shopping-cart mx-3">
-                        <input type="number" class="form-control" />
+                        <input type="number" class="form-control"/>
                     </div>
                 </div>
             </div>

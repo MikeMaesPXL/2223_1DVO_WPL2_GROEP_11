@@ -43,6 +43,15 @@ input[type=text], input[type=email], input[type=tel] {
 .sizing2 {
     margin-top: -75px !important;
 }
+
+.textarea-style {
+    resize: none;
+    background: transparent;
+    width: 350px;
+    border: 2px solid #D9D9D9;
+}
+
+
 ::placeholder {
     opacity: 0.5 !important;
 }
@@ -54,3 +63,30 @@ input:active, input:focus {
     border-color: #8787FF !important;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(135, 135, 255, 0.425) !important;
 }
+
+@media screen and (max-width: 767px) {
+    .sizing {
+        flex-direction: column;
+    }
+    .textarea.p-1 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .order-md-first {
+        order: 2;
+    }
+    .order-md-last {
+        order: 1;
+    }
+    .contactForm textarea {
+        height: 100px;
+        width: 200px;
+        margin-top: -50px;
+    }
+    #inputNaam, #inputAchternaam, #inputEmail, #inputGsm {
+        margin-bottom: 20px;
+    }
+}
+
