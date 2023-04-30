@@ -1,0 +1,52 @@
+#home-section {
+    min-height: 100vh;
+}
+
+.title-color {
+    color: #8B17FF;
+}
+
+.quote-color {
+    color: #FF9B00;
+}
+
+#btn-style {
+    border-style: none;
+    border-radius: 10px;
+    line-height: 40px;
+    width: 175px !important;
+    font-size: 16px;
+}
+
+.main-card-style {
+    border-radius: 20px;
+    background-color: #FF9B00;
+    color: white;
+    width: 275px;
+    height: 160px;
+}
+
+.card-style {
+    border-radius: 20px;
+    background-color: #FAF6F4;
+    color: #2F1966;
+    width: 275px;
+    height: 160px;
+}
+
+@media only screen and (max-width: 414px) {
+    .col-xxl-4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #col-center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center !important;
+    }
+}
+
+
