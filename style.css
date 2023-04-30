@@ -130,7 +130,7 @@ input[type=number] {
 .btn.btn-primary:hover {
     background-color: #8B17FF !important;
 }
-#checkout-button {
+#winkelmand-div {
     padding-top: 40px !important;
 }
 /* -- MEDIA QUERIES -- */
@@ -141,7 +141,8 @@ input[type=number] {
     .navbar-brand img {
         height: 25px !important;
     }
-    .offcanvas-header, .offcanvas-body {
+    .offcanvas {
+        height: 50vh !important;
         width: 100% !important;
     }
 }
