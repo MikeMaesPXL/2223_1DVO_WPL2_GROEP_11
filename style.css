@@ -141,7 +141,7 @@ input[type=number] {
     .navbar-brand img {
         height: 25px !important;
     }
-    .offcanvas-header, .offcanvas-body {
-        width: 100% !important;
+    .offcanvas {
+        height: 55% !important;
     }
 }
