@@ -16,6 +16,7 @@
     line-height: 40px;
     width: 175px !important;
     font-size: 16px;
+    margin-top: 40px;
 }
 
 .main-card-style {
@@ -34,19 +35,74 @@
     height: 160px;
 }
 
-@media only screen and (max-width: 736px) {
-    .col-xxl-4 {
+@media only screen and (min-width: 1920px) {
+    .row.gy-md-0 {
+        margin-top: 50px;
+    }
+}
+
+
+@media only screen and (max-width: 1399px) {
+    #col1 {
+        display: flex;
+        justify-content: flex-start !important;
+        align-items: flex-start !important;
+    }
+
+    .col2 {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    #col3 {
+        display: flex;
+        flex-direction: row !important;
+        justify-content: center;
+        align-items: flex-start !important;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .card-style {
+        border-radius: 20px;
+        background-color: #FAF6F4;
+        font-size: 14px;
+        color: #2F1966;
+        width: 225px;
+        height: 140px;
+    }
+
+    .main-card-style {
+        border-radius: 20px;
+        background-color: #FF9B00;
+        font-size: 14px;
+        color: white;
+        width: 225px;
+        height: 140px;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    #col1 {
+        display: flex;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .col2 {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    #col-center {
+
+    #col3 {
         display: flex;
-        flex-direction: column;
+        flex-direction: column !important;
         justify-content: center;
         align-items: center !important;
     }
 }
-
 
