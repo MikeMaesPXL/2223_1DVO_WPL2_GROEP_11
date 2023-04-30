@@ -19,3 +19,9 @@ span.badge.bg-primary.rounded-pill {
 #betaling-title {
     color: #2F1966 !important;
 }
+
+@media screen and (max-width: 736px) {
+    .btn.btn-primary {
+        width: 100% !important;
+    }
+}
