@@ -14,6 +14,16 @@ span.text-primary, #facturatie-adres, #betaling-title {
 span.badge.bg-primary.rounded-pill {
     background-color: #2F1966 !important;
 }
+#betalen-button {
+    border-style: none !important;
+}
+.form-check-input:checked {
+    background-color: #8B17FF !important;
+    border-color: #8B17FF !important;
+}
+.badge.bg-primary {
+    background-color: #2F1966 !important;
+}
 @media screen and (max-width: 736px) {
     #betalen-button {
         width: 100% !important;

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linejoin: round;
+        stroke-width: 60px;
+      }
+    </style>
+  </defs>
+  <polygon class="cls-1" points="500 685.81 683.4 782.23 648.37 578.01 796.75 433.38 591.7 403.58 500 217.77 408.3 403.58 203.25 433.38 351.63 578.01 316.6 782.23 500 685.81"/>
+</svg>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 60px;
+      }
+    </style>
+  </defs>
+  <line class="cls-1" x1="256" y1="741.03" x2="740.93" y2="256.11"/>
+  <line class="cls-1" x1="256" y1="259.18" x2="740.93" y2="744.11"/>
+</svg>

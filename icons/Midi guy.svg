@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Medium" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-width: 75px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        stroke-width: 65px;
+      }
+    </style>
+  </defs>
+  <line class="cls-1" x1="499.61" y1="385.6" x2="499.61" y2="620.16"/>
+  <line class="cls-1" x1="499.58" y1="629.68" x2="431.39" y2="763"/>
+  <line class="cls-1" x1="499.39" y1="629.68" x2="567.58" y2="763"/>
+  <line class="cls-2" x1="499.83" y1="549.44" x2="619.61" y2="417.55"/>
+  <line class="cls-2" x1="500.17" y1="549.44" x2="380.39" y2="417.55"/>
+  <circle cx="499" cy="350" r="83"/>
+</svg>
