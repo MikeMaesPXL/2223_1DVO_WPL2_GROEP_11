@@ -12,141 +12,179 @@
     --font-family-title: "proxima-nova", sans-serif;
     --font-family-body: "roboto-slab", serif;
 }
+
 * {
     margin: 0;
     padding: 0;
 }
+
 /* -- Webkits -- */
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
     display: none;
 }
+
 /* -- Fonts and colors in classes -- */
-.font-title{
+.font-title {
     font-family: var(--font-family-title) !important;
 }
+
 .font-body {
     font-family: var(--font-family-body) !important;
 }
+
 .header-text-color {
     color: var(--secondary-color-dark-blue) !important;
 }
+
 .body-text-color {
     color: var(--body-text-color) !important;
 }
+
 /* -- NAV -- */
 #nav-bar {
     top: 0;
     z-index: 10;
 }
+
 .navbar {
     background-color: var(--secondary-color-white-grey);
     padding: 0 !important;
 }
+
 .nav-item {
     padding-left: 2rem;
 }
+
 .nav-item a {
     color: var(--primary-color-purple);
     font-weight: 600;
     font-family: var(--font-family-title);
 }
+
 .navbar-brand {
     padding-left: 7%;
 }
+
 #navbarNav {
     padding-right: 7%;
 }
+
 .navbar-brand img {
     height: 30px;
 }
+
 .shopping-cart img {
     height: 20px;
     color: var(--primary-color-purple) !important;
 }
+
 .nav-link:hover {
     color: var(--secondary-color-orange) !important;
 }
+
 /* -- FOOTER --*/
 .footer {
     background-color: var(--primary-color-purple);
 }
+
 .text-footer {
     color: var(--tertiary-color-white);
 }
+
 /* -- WINKELMAND -- */
 .offcanvas {
     height: 65% !important;
 }
+
 .offcanvas-header {
     background-color: #faf6f4 !important;
     padding-top: 21px !important;
     padding-bottom: 21px !important;
 }
+
 .offcanvas-body {
     background-color: #faf6f4 !important;
 }
+
 .offcanvas-body h1 {
     font-size: 35px;
 }
+
 .seperator {
     width: 80%;
 }
+
 #item-wrapper {
     width: 90%;
 }
+
 .picture-shopping-cart {
     width: 80px;
     height: 80px;
 }
+
 .picture-shopping-cart img {
     object-fit: cover;
     width: 80px;
     height: 80px;
 }
+
 .item-text {
     font-size: 14px !important;
 }
+
 .item-shopping-cart p {
     height: 24px;
 }
+
 input[type=number] {
     background: transparent;
     border: none;
     width: 60px;
 }
+
 .form-control:focus {
     border-color: #8787FF !important;
     background-color: #faf6f4 !important;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0), 0 0 8px rgba(0, 0, 0, 0) !important;
 }
+
 .btn.btn-primary {
     width: 40% !important;
     background-color: #2F1966 !important;
 }
+
 .btn.btn-primary a {
     text-decoration: none !important;
     color: #fff !important;
 }
+
 .btn.btn-primary:hover {
     background-color: #8B17FF !important;
 }
+
 #winkelmand-div {
     padding-top: 40px !important;
 }
+
 #winkelmand-button {
     border-style: none !important;
 }
+
 .text-index {
     text-align: justify;
 }
+
 /* -- MEDIA QUERIES -- */
 @media screen and (max-width: 736px) {
     .navbar-brand {
         padding-left: 20px !important;
     }
+
     .navbar-brand img {
         height: 25px !important;
     }
+
     .offcanvas {
         height: 50vh !important;
         width: 100% !important;

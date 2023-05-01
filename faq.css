@@ -1,26 +1,32 @@
 #faq-section {
     min-height: 95vh;
 }
+
 #question-mark {
     color: #8787ff;
     font-size: 50px;
 }
+
 .dashed-line {
     border: none;
     height: 5px;
     background: #000;
-    background: repeating-linear-gradient(90deg, #6363ff,#6363FF 24px,transparent 24px,transparent 50px);
+    background: repeating-linear-gradient(90deg, #6363ff, #6363FF 24px, transparent 24px, transparent 50px);
     width: 80%;
 }
+
 .accordion {
     width: 60% !important;
 }
+
 .accordion-item {
     padding: 10px;
 }
+
 .faq-title {
     font-size: 30px;
 }
+
 /*.accordion-button:not(.collapsed) {*/
 /*    background-color: #8787FF !important;*/
 /*    opacity: 0.3 !important;*/
@@ -33,6 +39,7 @@
     .accordion {
         width: 80% !important;
     }
+
     .faq-title {
         width: 80% !important;
     }
