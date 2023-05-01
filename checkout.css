@@ -1,29 +1,43 @@
 #checkout-section {
     min-height: 100vh;
 }
+
 .btn.btn-primary {
     background-color: #2F1966 !important;
 }
+
 .btn.btn-secondary {
     background-color: #2F1966 !important;
 }
-span.text-primary, #facturatie-adres, #betaling-title {
+
+.promo-code {
+    color: #FF9B00 !important;
+}
+
+span.text-primary,
+#facturatie-adres,
+#betaling-title {
     color: #2F1966 !important;
     font-weight: bold;
 }
+
 span.badge.bg-primary.rounded-pill {
     background-color: #2F1966 !important;
 }
+
 #betalen-button {
     border-style: none !important;
 }
+
 .form-check-input:checked {
     background-color: #8B17FF !important;
     border-color: #8B17FF !important;
 }
+
 .badge.bg-primary {
     background-color: #2F1966 !important;
 }
+
 @media screen and (max-width: 736px) {
     #betalen-button {
         width: 100% !important;
