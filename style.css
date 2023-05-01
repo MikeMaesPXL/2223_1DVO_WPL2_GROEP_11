@@ -133,6 +133,9 @@ input[type=number] {
 #winkelmand-div {
     padding-top: 40px !important;
 }
+#winkelmand-button {
+    border-style: none !important;
+}
 /* -- MEDIA QUERIES -- */
 @media screen and (max-width: 736px) {
     .navbar-brand {
