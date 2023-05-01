@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Warning" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 60px;
+      }
+    </style>
+  </defs>
+  <polygon class="cls-1" points="500 758.08 202 758.08 351 500 500 241.92 649 500 798 758.08 500 758.08"/>
+  <path d="m456.48,678.14c0-23.1,17.19-38.15,42.98-38.15s44.06,15.58,44.06,38.68-17.73,37.61-44.06,37.61-42.98-15.58-42.98-38.15Zm.54-231.02c0-42.44,15.04-63.4,42.44-63.4s43.52,20.95,43.52,63.4c0,107.45-18.27,162.79-43.52,162.79s-42.44-54.8-42.44-162.79Z"/>
+</svg>

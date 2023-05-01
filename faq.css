@@ -21,6 +21,14 @@
 .faq-title {
     font-size: 30px;
 }
+/*.accordion-button:not(.collapsed) {*/
+/*    background-color: #8787FF !important;*/
+/*    opacity: 0.3 !important;*/
+/*    box-shadow: inset 0 0 #fff !important;*/
+/*}*/
+/*.accordion-button:not(.collapsed).accordion-body {*/
+/*    opacity: 1 !important;*/
+/*}*/
 @media screen and (max-width: 736px) {
     .accordion {
         width: 80% !important;

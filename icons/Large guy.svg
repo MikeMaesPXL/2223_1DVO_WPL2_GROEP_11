@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Large" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-width: 100px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        stroke-width: 80px;
+      }
+    </style>
+  </defs>
+  <line class="cls-1" x1="498.49" y1="378.58" x2="498.49" y2="711.17"/>
+  <line class="cls-1" x1="498.45" y1="724.67" x2="409.13" y2="874"/>
+  <line class="cls-1" x1="498.2" y1="724.67" x2="587.52" y2="874"/>
+  <line class="cls-2" x1="498.78" y1="630.89" x2="655.68" y2="443.89"/>
+  <line class="cls-2" x1="499.22" y1="630.89" x2="342.32" y2="443.89"/>
+  <ellipse cx="500" cy="351.82" rx="114" ry="113.82"/>
+</svg>
