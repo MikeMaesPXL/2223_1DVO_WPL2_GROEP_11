@@ -24,31 +24,51 @@
 /* -- Wrappers om de visie en missie omhoog en omlaag te pushen -- */
 .missie-wrapper {
     margin-bottom: 150px;
+    margin-left: 150px !important;
 }
 
 .visie-wrapper {
     margin-top: 250px;
+    margin-right: 150px !important;
 }
+
+.arrow {
+    height: 420px;
+    transform: rotate(240deg);
+    position: absolute;
+    top: 550px;
+}
+
 
 @media screen and (max-width: 736px) {
     .visie-wrapper {
         margin-top: -1200px;
+        margin-right: 0px !important;
     }
 
     .missie-wrapper {
         margin-bottom: 900px;
+        margin-left: 0px !important;
     }
 
+    #about-info-section .mobile,
     .visie-wrapper .mobile,
     .missie-wrapper .mobile {
         text-align: justify !important;
     }
 
     .purple-blob {
-        background-position: 155% 140%;
+        background-position: 155% -20%;
+        /*background-size: 53% 60%;*/
     }
 
     .orange-blob {
-        background-position: -45% 160%;
+        background-position: -30% 160%;
+        /*background-size: 53% 60%;*/
+    }
+
+    .arrow {
+        top: 680px;
+        height: 220px;
     }
 }
