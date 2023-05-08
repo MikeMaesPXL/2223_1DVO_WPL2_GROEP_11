@@ -171,10 +171,6 @@ input[type=number] {
     border-style: none !important;
 }
 
-.text-index {
-    text-align: justify;
-}
-
 /* -- MEDIA QUERIES -- */
 @media screen and (max-width: 736px) {
     .navbar-brand {
