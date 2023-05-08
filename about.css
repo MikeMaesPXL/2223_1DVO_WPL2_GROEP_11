@@ -1,42 +1,59 @@
 /*!* -- INFO & MISSION, VISION -- *!*/
-.purple-blob {
-    background: url("images/Vorm2.svg") no-repeat;
-    background-size: 53% 60%;
-    background-position: 160% 90%;
-}
+/*.purple-blob {*/
+/*    background: url("images/Vorm2.svg") no-repeat;*/
+/*    background-size: 53% 60%;*/
+/*    background-position: 160% 90%;*/
+/*}*/
 
 .orange-blob {
     background: url("images/Vorm1.svg") no-repeat;
-    background-size: 53% 60%;
-    background-position: -60% 135%;
+    background-size: 55% 60%;
+    background-position: -60% 0%;
 }
 
 #about-info-section,
 #about-mv-section {
     min-height: 100vh;
 }
-
+#about-info-section h1 {
+    font-size: 60px;
+}
+.missie-wrapper h2, .visie-wrapper h2 {
+    font-size: 32px;
+}
+.missie-wrapper p, .visie-wrapper p {
+    font-size: 17.5px;
+}
+#about-info-section p {
+    font-size: 20px;
+}
 #icon_logo {
-    width: 100px;
-    height: auto;
+    position: absolute;
+    z-index: -1;
+    width: 450px;
+    height: 450px;
+    margin-left: 750px !important;
+    margin-top: -120px !important;
+    transform: rotate(35deg);
 }
 
 /* -- Wrappers om de visie en missie omhoog en omlaag te pushen -- */
 .missie-wrapper {
-    margin-bottom: 150px;
+    margin-top: 250px;
     margin-left: 150px !important;
 }
 
 .visie-wrapper {
-    margin-top: 250px;
+    margin-bottom: 250px;
     margin-right: 150px !important;
 }
 
 .arrow {
     height: 420px;
-    transform: rotate(240deg);
+    transform: rotate(220deg);
     position: absolute;
     top: 550px;
+    left: 550px;
 }
 
 
@@ -54,7 +71,7 @@
     #about-info-section .mobile,
     .visie-wrapper .mobile,
     .missie-wrapper .mobile {
-        text-align: justify !important;
+        text-align: left  !important;
     }
 
     .purple-blob {
