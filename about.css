@@ -78,7 +78,7 @@
 }
 
 .customColor {
-    background-image: linear-gradient(43deg, #8787FF 0%, #2F1966 46%, #3F1F8F 100%);
+    background-image: linear-gradient(30deg, #8787FF 0%, #2F1966 46%, #3F1F8F 80%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent !important;
