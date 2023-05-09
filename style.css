@@ -93,13 +93,14 @@ body::-webkit-scrollbar {
 
 /* -- WINKELMAND -- */
 .offcanvas {
-    height: 65% !important;
+    height: 100vh !important;
+    width: 30% !important;
 }
 
 .offcanvas-header {
     background-color: #faf6f4 !important;
-    padding-top: 21px !important;
-    padding-bottom: 21px !important;
+    padding-top: 25px !important;
+    padding-bottom: 25px !important;
 }
 
 .offcanvas-body {
@@ -108,10 +109,6 @@ body::-webkit-scrollbar {
 
 .offcanvas-body h1 {
     font-size: 35px;
-}
-
-.seperator {
-    width: 80%;
 }
 
 #item-wrapper {
@@ -138,7 +135,8 @@ body::-webkit-scrollbar {
 }
 
 input[type=number] {
-    background: transparent;
+    background: grey;
+    opacity: 0.3;
     border: none;
     width: 60px;
 }
@@ -182,7 +180,7 @@ input[type=number] {
     }
 
     .offcanvas {
-        height: 50vh !important;
+        height: 100vh !important;
         width: 100% !important;
     }
 }

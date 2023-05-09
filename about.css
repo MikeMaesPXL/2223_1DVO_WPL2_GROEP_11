@@ -32,21 +32,21 @@
     font-size: 20px;
 }
 
-.shape-wrapper {
-    position: absolute !important;
-    bottom: -100px;
-    left: 500px;
-    filter: blur(100px);
-}
+/*.shape-wrapper {*/
+/*    position: absolute !important;*/
+/*    bottom: -100px;*/
+/*    left: 500px;*/
+/*    filter: blur(100px);*/
+/*}*/
 
-.shape {
-    width: 80vw;
-    aspect-ratio: 1/1;
-    background-image: linear-gradient(to right, #8787FF, #2F1966, #3F1F8F);
-    opacity: 0.15;
-    scale: 0.5;
-    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
-}
+/*.shape {*/
+/*    width: 80vw;*/
+/*    aspect-ratio: 1/1;*/
+/*    background-image: linear-gradient(to right, #8787FF, #2F1966, #3F1F8F);*/
+/*    opacity: 0.15;*/
+/*    scale: 0.5;*/
+/*    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);*/
+/*}*/
 
 #icon_logo {
     position: absolute;
@@ -88,14 +88,20 @@
 
 @media screen and (max-width: 736px) {
     .visie-wrapper {
-        margin-top: -1200px;
+        margin-top: 0px;
+        margin-bottom: 200px;
         margin-right: 0px !important;
     }
 
-
     .missie-wrapper {
-        margin-bottom: 900px;
+        margin-bottom: -00px !important;
+        margin-top: 0px;
         margin-left: 0px !important;
+        background-color: red;
+    }
+
+    .section-wrapper{
+        background-color: yellow;
     }
 
     #about-info-section .mobile,
@@ -104,26 +110,17 @@
         text-align: left !important;
     }
 
-    .purple-blob {
-        background-position: 155% -20%;
-        /*background-size: 53% 60%;*/
-    }
-
     .orange-blob {
         background-position: -30% 160%;
-        /*background-size: 53% 60%;*/
     }
 
     #icon_logo {
-        bottom: 350px;
-        right: -10px;
-        scale: 0.4;
-        transform: translateY(-50%);
-        background-color: orange;
+        display: none !important;
     }
 
     .arrow {
-        height: 220px;
+        height: 120px;
+        margin-top: 50px;
         top: 60%;
         left: 150px;
         transform: translateY(-50%);
