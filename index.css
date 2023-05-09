@@ -1,107 +1,112 @@
-#home-section {
+/* -- Landing page -- */
+#landing-section {
     min-height: 100vh;
 }
 
-.title-color {
-    color: #8B17FF;
-}
+/*#home-section {*/
+/*    min-height: 100vh;*/
+/*}*/
 
-.quote-color {
-    color: #FF9B00;
-}
+/*.title-color {*/
+/*    color: #8B17FF;*/
+/*}*/
 
-#btn-style {
-    border-style: none;
-    border-radius: 10px;
-    line-height: 40px;
-    width: 175px !important;
-    font-size: 16px;
-    margin-top: 40px;
-}
+/*.quote-color {*/
+/*    color: #FF9B00;*/
+/*}*/
 
-.main-card-style {
-    border-radius: 20px;
-    background-color: #FF9B00;
-    color: white;
-    width: 275px;
-    height: 160px;
-}
+/*#btn-style {*/
+/*    border-style: none;*/
+/*    border-radius: 10px;*/
+/*    line-height: 40px;*/
+/*    width: 175px !important;*/
+/*    font-size: 16px;*/
+/*    margin-top: 40px;*/
+/*}*/
 
-.card-style {
-    border-radius: 20px;
-    background-color: #FAF6F4;
-    color: #2F1966;
-    width: 275px;
-    height: 160px;
-}
+/*.main-card-style {*/
+/*    border-radius: 20px;*/
+/*    background-color: #FF9B00;*/
+/*    color: white;*/
+/*    width: 275px;*/
+/*    height: 160px;*/
+/*}*/
 
-@media only screen and (min-width: 1920px) {
-    .row.gy-md-0 {
-        margin-top: 50px;
-    }
-}
+/*.card-style {*/
+/*    border-radius: 20px;*/
+/*    background-color: #FAF6F4;*/
+/*    color: #2F1966;*/
+/*    width: 275px;*/
+/*    height: 160px;*/
+/*}*/
 
-
-@media only screen and (max-width: 1399px) {
-    #col1 {
-        display: flex;
-        justify-content: flex-start !important;
-        align-items: flex-start !important;
-    }
-
-    .col2 {
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    #col3 {
-        display: flex;
-        flex-direction: row !important;
-        justify-content: center;
-        align-items: flex-start !important;
-        margin-top: 50px;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 991px) {
-    .card-style {
-        border-radius: 20px;
-        background-color: #FAF6F4;
-        font-size: 14px;
-        color: #2F1966;
-        width: 225px;
-        height: 160px;
-    }
-
-    .main-card-style {
-        border-radius: 20px;
-        background-color: #FF9B00;
-        font-size: 14px;
-        color: white;
-        width: 225px;
-        height: 160px;
-    }
-}
+/*@media only screen and (min-width: 1920px) {*/
+/*    .row.gy-md-0 {*/
+/*        margin-top: 50px;*/
+/*    }*/
+/*}*/
 
 
-@media screen and (max-width: 767px) {
-    #col1 {
-        display: flex;
-        justify-content: center !important;
-        align-items: center !important;
-    }
+/*@media only screen and (max-width: 1399px) {*/
+/*    #col1 {*/
+/*        display: flex;*/
+/*        justify-content: flex-start !important;*/
+/*        align-items: flex-start !important;*/
+/*    }*/
 
-    .col2 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+/*    .col2 {*/
+/*        display: flex;*/
+/*        justify-content: flex-end;*/
+/*    }*/
 
-    #col3 {
-        display: flex;
-        flex-direction: column !important;
-        justify-content: center;
-        align-items: center !important;
-    }
-}
+/*    #col3 {*/
+/*        display: flex;*/
+/*        flex-direction: row !important;*/
+/*        justify-content: center;*/
+/*        align-items: flex-start !important;*/
+/*        margin-top: 50px;*/
+/*    }*/
+/*}*/
+
+/*@media screen and (min-width: 768px) and (max-width: 991px) {*/
+/*    .card-style {*/
+/*        border-radius: 20px;*/
+/*        background-color: #FAF6F4;*/
+/*        font-size: 14px;*/
+/*        color: #2F1966;*/
+/*        width: 225px;*/
+/*        height: 160px;*/
+/*    }*/
+
+/*    .main-card-style {*/
+/*        border-radius: 20px;*/
+/*        background-color: #FF9B00;*/
+/*        font-size: 14px;*/
+/*        color: white;*/
+/*        width: 225px;*/
+/*        height: 160px;*/
+/*    }*/
+/*}*/
+
+
+/*@media screen and (max-width: 767px) {*/
+/*    #col1 {*/
+/*        display: flex;*/
+/*        justify-content: center !important;*/
+/*        align-items: center !important;*/
+/*    }*/
+
+/*    .col2 {*/
+/*        display: flex;*/
+/*        flex-direction: column;*/
+/*        justify-content: center;*/
+/*        align-items: center;*/
+/*    }*/
+
+/*    #col3 {*/
+/*        display: flex;*/
+/*        flex-direction: column !important;*/
+/*        justify-content: center;*/
+/*        align-items: center !important;*/
+/*    }*/
+/*}*/
