@@ -15,18 +15,39 @@
 #about-mv-section {
     min-height: 100vh;
 }
+
 #about-info-section h1 {
     font-size: 60px;
 }
+
 .missie-wrapper h2, .visie-wrapper h2 {
     font-size: 32px;
 }
+
 .missie-wrapper p, .visie-wrapper p {
     font-size: 17.5px;
 }
+
 #about-info-section p {
     font-size: 20px;
 }
+
+.shape-wrapper {
+    position: absolute !important;
+    bottom: -100px;
+    left: 500px;
+    filter: blur(100px);
+}
+
+.shape {
+    width: 80vw;
+    aspect-ratio: 1/1;
+    background-image: linear-gradient(to right, #8787FF, #2F1966, #3F1F8F);
+    opacity: 0.15;
+    scale: 0.5;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+}
+
 #icon_logo {
     position: absolute;
     z-index: -1;
@@ -56,12 +77,21 @@
     left: 550px;
 }
 
+.customColor {
+    background-image: linear-gradient(43deg, #8787FF 0%, #2F1966 46%, #3F1F8F 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent !important;
+    width: 260px;
+}
+
 
 @media screen and (max-width: 736px) {
     .visie-wrapper {
         margin-top: -1200px;
         margin-right: 0px !important;
     }
+
 
     .missie-wrapper {
         margin-bottom: 900px;
@@ -71,7 +101,7 @@
     #about-info-section .mobile,
     .visie-wrapper .mobile,
     .missie-wrapper .mobile {
-        text-align: left  !important;
+        text-align: left !important;
     }
 
     .purple-blob {
@@ -84,8 +114,22 @@
         /*background-size: 53% 60%;*/
     }
 
-    .arrow {
-        top: 680px;
-        height: 220px;
+    #icon_logo {
+        bottom: 350px;
+        right: -10px;
+        scale: 0.4;
+        transform: translateY(-50%);
+        background-color: orange;
     }
+
+    .arrow {
+        height: 220px;
+        top: 60%;
+        left: 150px;
+        transform: translateY(-50%);
+        rotate: 180deg;
+        scale: 2;
+        background-color: red;
+    }
+
 }
