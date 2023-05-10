@@ -1,107 +1,155 @@
-#home-section {
-    min-height: 100vh;
+.landing {
+    margin-bottom: 134px;
 }
 
-.title-color {
-    color: #8B17FF;
+.hoofdtitel {
+    font-size: 79px;
+    width: 428px;
+    color: rgb(139, 23, 255);
+    font-weight: bold;
 }
 
-.quote-color {
+.subtitel {
+    font-size: 24px;
     color: #FF9B00;
 }
 
-#btn-style {
-    border-style: none;
-    border-radius: 10px;
-    line-height: 40px;
-    width: 175px !important;
-    font-size: 16px;
-    margin-top: 40px;
+.subtext {
+    font-size: 20px;
 }
 
-.main-card-style {
-    border-radius: 20px;
-    background-color: #FF9B00;
-    color: white;
-    width: 275px;
-    height: 160px;
+.btn.btn-danger {
+    background-color: #2F1966;
+    border-color: #2F1966;
+    width: 192px;
+    height: 64px;
 }
 
-.card-style {
-    border-radius: 20px;
-    background-color: #FAF6F4;
-    color: #2F1966;
-    width: 275px;
-    height: 160px;
+.btn.btn-danger:hover {
+    background-color: #8B17FF;
+    border-color: #8B17FF
 }
 
-@media only screen and (min-width: 1920px) {
-    .row.gy-md-0 {
-        margin-top: 50px;
-    }
+.btn.btn-danger:active {
+    background-color: #8B17FF !important;
 }
 
-
-@media only screen and (max-width: 1399px) {
-    #col1 {
-        display: flex;
-        justify-content: flex-start !important;
-        align-items: flex-start !important;
-    }
-
-    .col2 {
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    #col3 {
-        display: flex;
-        flex-direction: row !important;
-        justify-content: center;
-        align-items: flex-start !important;
-        margin-top: 50px;
-    }
+.phonesection {
+    padding-top: 186px;
+    background: rgba(255, 155, 0, 0.1);
+    padding-bottom: 170px;
+    margin-bottom: -8px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
-    .card-style {
-        border-radius: 20px;
-        background-color: #FAF6F4;
-        font-size: 14px;
-        color: #2F1966;
-        width: 225px;
-        height: 160px;
-    }
-
-    .main-card-style {
-        border-radius: 20px;
-        background-color: #FF9B00;
-        font-size: 14px;
-        color: white;
-        width: 225px;
-        height: 160px;
-    }
+#cardtop {
+    top: -50px;
 }
 
-
-@media screen and (max-width: 767px) {
-    #col1 {
-        display: flex;
-        justify-content: center !important;
-        align-items: center !important;
-    }
-
-    .col2 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #col3 {
-        display: flex;
-        flex-direction: column !important;
-        justify-content: center;
-        align-items: center !important;
-    }
+#cardstyling {
+    border-width: 0px;
+    background: #ffffff00;
 }
+
+#cardstyling2 {
+    border-width: 0px;
+    background: #ffffff00;
+}
+
+#cardstyling3 {
+    border-width: 0px;
+    background: #ffffff00;
+}
+
+.iconcircle {
+    top: -30px;
+    --bs-primary: #8B17FF;
+    --bs-primary-rgb: 139, 23, 255
+}
+
+.cardTitleStyle {
+    text-align: center;
+    font-size: 32px;
+    color: #2F1966 !important;
+}
+
+.cardSubText {
+    text-align: center;
+    font-size: 24px;
+    color: #62558A;
+}
+
+#phoneImg {
+    height: 500px;
+}
+
+#phoneImg2 {
+    height: 500px;
+}
+
+#phoneImg3 {
+    height: 500px;
+}
+
+.section-height {
+    padding-top: 500px;
+    padding-bottom: 500px;
+}
+
+#gradianttext {
+    font-size: 80px;
+    background-image: linear-gradient(43deg, #8787FF 0%, #2F1966 46%, #3F1F8F 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent !important;
+}
+
+.arrow {
+    width: 1020px;
+    position: absolute;
+    margin-left: -68px;
+    padding-left: 0px;
+    padding-right: 260px;
+    padding-top: 0px;
+    margin-top: -84px;
+}
+
+.bs-icon {
+    --bs-icon-size: .75rem;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--bs-icon-size);
+    width: calc(var(--bs-icon-size) * 2);
+    height: calc(var(--bs-icon-size) * 2);
+    color: var(--bs-primary);
+}
+
+.bs-icon-lg {
+    --bs-icon-size: 2rem;
+}
+
+.bs-icon.bs-icon-primary {
+    color: var(--bs-white);
+    background: var(--bs-primary);
+}
+
+.bs-icon.bs-icon-circle {
+    border-radius: 50%;
+}
+
+/*
+.customCSS {
+  background-color: red;
+}
+
+@media (min-width: 1400px) {
+  #phoneImg {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+*/
+
