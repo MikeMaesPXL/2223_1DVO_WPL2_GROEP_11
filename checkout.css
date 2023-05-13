@@ -14,6 +14,10 @@
     color: #FF9B00 !important;
 }
 
+hr {
+    width: 85%;
+}
+
 span.text-primary,
 #facturatie-adres,
 #betaling-title {

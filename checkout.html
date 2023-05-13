@@ -16,6 +16,7 @@
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"></script>
+    <script src="script.js" async></script>
 </head>
 
 <body>
@@ -57,9 +58,9 @@
 
     <section class="container-md" id="checkout-section">
         <div class="container-md p-5">
-            <main>
+            <main class="d-flex justify-content-center">
                 <div class="row g-5">
-                    <div class="col-md-5 col-lg-4 order-md-last pt-5">
+                    <div class="col-lg-4 order-md-last pt-5"> <!-- col-md-5 col-lg-4 order-md-last -->
                         <h4 class="d-flex justify-content-between align-items-center mb-3">
                             <span class="text-primary font-title">Uw Winkelmand!</span>
                             <span class="badge bg-primary rounded-circle font-body">3</span>
@@ -68,8 +69,7 @@
                             <li class="list-group-item d-flex justify-content-between lh-sm">
                                 <div>
                                     <h6 class="my-0 font-body body-text-color fw-normal">Product naam</h6>
-                                    <small class="text-muted font-body body-text-color fw-normal">Korte
-                                        uitleg</small>
+                                    <small class="text-muted font-body body-text-color fw-normal">Korte uitleg</small>
                                 </div>
                                 <span class="text-muted font-title header-text-color">€20</span>
                             </li>
@@ -94,7 +94,7 @@
                                     <h6 class="my-0 font-body fw-normal promo-code">Promo code</h6>
                                     <small class="font-title fw-normal promo-code">KLEINEZORG2023</small>
                                 </div>
-                                <span class="text-success font-title header-text-color">−€5</span>
+                                <span class="font-title promo-code">−€5</span>
                             </li>
                             <li class="list-group-item d-flex justify-content-between">
                                 <span class="font-body body-text-color fw-normal">Totaal (EUR)</span>
@@ -110,10 +110,10 @@
                         </form>
                     </div>
                     <div class="col-md-7 col-lg-8">
-                        <h4 class="mb-0 pt-5 font-title" id="facturatie-adres">Facturatie Adres</h4>
-                        <form class="needs-validation pt-5" novalidate>
+                        <h4 class="mb-0 pt-5 font-title" id="facturatie-adres">Facturatie</h4>
+                        <form class="needs-validation pt-4" novalidate>
                             <div class="row g-3">
-                                <div class="col-sm-3">
+                                <div class="col-sm-5">
                                     <label for="firstName"
                                         class="form-label font-body fw-regular body-text-color">Voornaam</label>
                                     <input type="text" class="form-control" id="firstName" placeholder="" value=""
@@ -123,7 +123,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-sm-3">
+                                <div class="col-sm-5">
                                     <label for="lastName"
                                         class="form-label font-body fw-regular body-text-color">Achternaam</label>
                                     <input type="text" class="form-control" id="lastName" placeholder="" value=""
@@ -133,20 +133,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-6-sm col-xs-12">
-                                    <label for="username"
-                                        class="form-label font-body fw-regular body-text-color">Gebruikersnaam</label>
-                                    <div class="input-group has-validation">
-                                        <span class="input-group-text font-body fw-regular body-text-color">@</span>
-                                        <input type="text" class="form-control font-body fw-regular body-text-color"
-                                            id="username" placeholder="Gebruikersnaam" required>
-                                        <div class="invalid-feedback">
-                                            Gebruikersnaam nodig.
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-6-sm col-xs-12">
+                                <div class="col-sm-5"> <!--- old column values col-6-sm col-xs-12 --> 
                                     <label for="email"
                                         class="form-label font-body fw-regular body-text-color">Email</label>
                                     <input type="email" class="form-control font-body fw-regular body-text-color"
@@ -156,7 +143,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-6-sm col-xs-12">
+                                <div class="col-sm-5"> <!--- old column values col-6-sm col-xs-12 --> 
                                     <label for="address"
                                         class="form-label font-body fw-regular body-text-color">Adres</label>
                                     <input type="text" class="form-control font-body fw-regular body-text-color"
@@ -166,14 +153,14 @@
                                     </div>
                                 </div>
 
-                                <div class="col-6-sm col-xs-12">
+                                <div class="col-sm-5">
                                     <label for="address2" class="form-label font-body fw-regular body-text-color">Adres
                                         2</label>
                                     <input type="text" class="form-control font-body fw-regular body-text-color"
                                         id="address2" placeholder="Apartement of Huis">
                                 </div>
 
-                                <div class="col-md-6">
+                                <div class="col-md-5">
                                     <label for="country"
                                         class="form-label font-body fw-regular body-text-color">Land</label>
                                     <select class="form-select font-body fw-regular body-text-color" id="country"
@@ -186,7 +173,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-md-6">
+                                <div class="col-md-5">
                                     <label for="state"
                                         class="form-label font-body fw-regular body-text-color">Provincie</label>
                                     <select class="form-select font-body fw-regular body-text-color" id="state"
@@ -208,7 +195,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-md-6">
+                                <div class="col-md-5">
                                     <label for="zip" class="form-label font-body fw-regular body-text-color">Zip</label>
                                     <input type="text" class="form-control" id="zip" placeholder="" required>
                                     <div class="invalid-feedback font-body">
@@ -217,7 +204,7 @@
                                 </div>
                             </div>
 
-                            <hr class="my-4">
+                            <hr class="my-5">
 
                             <div class="form-check">
                                 <input type="checkbox" class="form-check-input" id="same-address">
@@ -231,7 +218,7 @@
                                     deze informatie bij voor volgende keer.</label>
                             </div>
 
-                            <hr class="my-4">
+                            <hr class="my-5">
 
                             <h4 class="mb-3 font-title" id="betaling-title">Betaling</h4>
 
@@ -257,19 +244,19 @@
                             </div>
 
                             <div class="row gy-3">
-                                <div class="col-md-6">
+                                <div class="col-md-5">
                                     <label for="cc-name" class="form-label font-body fw-regular body-text-color">Naam op
                                         de
                                         kaart</label>
                                     <input type="text" class="form-control" id="cc-name" placeholder="" required>
-                                    <small class="text-muted font-body">Volledige naam zoals weergegeven op de
+                                    <small class="text-muted font-body">Naam zoals weergegeven op de
                                         kaart.</small>
                                     <div class="invalid-feedback font-body">
                                         Naam op de kaart verplicht.
                                     </div>
                                 </div>
 
-                                <div class="col-md-6">
+                                <div class="col-md-5">
                                     <label for="cc-number"
                                         class="form-label font-body fw-regular body-text-color">Credit kaart
                                         nummer</label>
@@ -322,35 +309,37 @@
         <div class="offcanvas-body">
             <div class="d-flex justify-content-center align-items-center flex-column">
                 <h1 class="fw-bold font-title header-text-color">Winkelmand</h1>
-                <hr class="hr hr-blurry py-2 seperator" />
+                <hr class="hr hr-blurry py-2 seperator"/>
             </div>
-            <div class="d-flex justify-content-center" id="container-wrapper">
-                <div id="item-wrapper">
-                    <div class="d-flex justify-content-center align-items-center">
-                        <div class="item-shopping-cart picture-shopping-cart mx-4">
-                            <img src="/images/WIP.svg" alt="item">
-                        </div>
-                        <div class="item-shopping-cart mx-3">
-                            <p class="item-text body-text-color font-body text-center">KZ Basis Pakket</p>
-                        </div>
-                        <div class="item-shopping-cart mx-3">
-                            <input type="number" class="form-control" />
-                        </div>
+            <div class="cart-items">
+                <div class="cart-row">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="images/WIP.svg" alt="img" width="75" height="75">
+                        <span class="cart-item-title">Klein pakket</span>
                     </div>
-                    <div class="d-flex justify-content-center align-items-center mt-3">
-                        <div class="item-shopping-cart picture-shopping-cart mx-4">
-                            <img src="/images/WIP.svg" alt="item">
-                        </div>
-                        <div class="item-shopping-cart mx-3">
-                            <p class="item-text body-text-color font-body text-center">KZ plus Pakket</p>
-                        </div>
-                        <div class="item-shopping-cart mx-3">
-                            <input type="number" class="form-control" />
-                        </div>
+                    <span class="cart-price cart-column">€24.99</span>
+                    <div class="cart-quantity cart-column">
+                        <input class="cart-quantity-input" type="number" value="1">
+                        <button class="btn btn-danger" type="button">REMOVE</button>
+                    </div>
+                </div>
+                <div class="cart-row">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="images/WIP.svg" alt="img" width="75" height="75">
+                        <span class="cart-item-title">Klein pakket</span>
+                    </div>
+                    <span class="cart-price cart-column">€24.99</span>
+                    <div class="cart-quantity cart-column">
+                        <input class="cart-quantity-input" type="number" value="1">
+                        <button class="btn btn-danger" type="button">REMOVE</button>
                     </div>
                 </div>
             </div>
-            <div class="d-flex justify-content-center align-items-center flex-column" id="winkelmand-div">
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">€49.98</span>
+            </div>
+            <div class="d-flex justify-content-center align-items-center flex-column mt-5" id="winkelmand-div">
                 <button type="button" id="winkelmand-button" class="btn btn-primary p-2 font-body fw-regular"><a
                         href="checkout.html">Checkout</a></button>
             </div>

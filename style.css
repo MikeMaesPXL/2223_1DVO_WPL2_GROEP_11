@@ -93,53 +93,99 @@ body::-webkit-scrollbar {
 
 /* -- WINKELMAND -- */
 .offcanvas {
-    height: 100vh !important;
     width: 30% !important;
 }
-
-.offcanvas-header {
-    background-color: #faf6f4 !important;
-    padding-top: 25px !important;
-    padding-bottom: 25px !important;
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
 }
 
-.offcanvas-body {
-    background-color: #faf6f4 !important;
+.cart-row {
+    display: flex;
 }
 
-.offcanvas-body h1 {
-    font-size: 35px;
+.cart-item {
+    width: 45%;
 }
 
-#item-wrapper {
-    width: 90%;
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
 }
 
-.picture-shopping-cart {
-    width: 80px;
-    height: 80px;
+.cart-quantity {
+    width: 35%;
 }
 
-.picture-shopping-cart img {
-    object-fit: cover;
-    width: 80px;
-    height: 80px;
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
 }
 
-.item-text {
-    font-size: 14px !important;
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
 }
 
-.item-shopping-cart p {
-    height: 24px;
-}
-
-input[type=number] {
-    background: grey;
-    opacity: 0.3;
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
     border: none;
-    width: 60px;
+    border-radius: .3em;
+    font-weight: bold;
 }
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+}
+
+
 
 .form-control:focus {
     border-color: #8787FF !important;
@@ -159,14 +205,6 @@ input[type=number] {
 
 .btn.btn-primary:hover {
     background-color: #8B17FF !important;
-}
-
-#winkelmand-div {
-    padding-top: 40px !important;
-}
-
-#winkelmand-button {
-    border-style: none !important;
 }
 
 /* -- MEDIA QUERIES -- */
