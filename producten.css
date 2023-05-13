@@ -2,9 +2,15 @@
 #product-section {
     min-height: 100vh;
 }
+
+#product-section p {
+    font-size: 20px;
+}
+
 #product-button {
     width: 40% !important;
 }
+
 #product-button button {
     padding: 10px !important;
 }

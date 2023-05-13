@@ -186,6 +186,14 @@ body::-webkit-scrollbar {
 }
 
 
+/* -- General stuff -- */
+.customColor {
+    background-image: linear-gradient(30deg, #8787FF 0%, #2F1966 46%, #3F1F8F 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent !important;
+    width: 260px;
+}
 
 .form-control:focus {
     border-color: #8787FF !important;
@@ -196,6 +204,7 @@ body::-webkit-scrollbar {
 .btn.btn-primary {
     width: 40% !important;
     background-color: #2F1966 !important;
+    border: none !important;
 }
 
 .btn.btn-primary a {

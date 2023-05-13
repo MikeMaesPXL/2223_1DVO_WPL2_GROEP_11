@@ -77,15 +77,6 @@
     left: 550px;
 }
 
-.customColor {
-    background-image: linear-gradient(30deg, #8787FF 0%, #2F1966 46%, #3F1F8F 80%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent !important;
-    width: 260px;
-}
-
-
 @media screen and (max-width: 736px) {
     .visie-wrapper {
         margin-top: 0px;
