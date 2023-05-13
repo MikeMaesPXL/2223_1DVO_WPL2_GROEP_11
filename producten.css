@@ -1,5 +1,5 @@
 /* -- PRODUCT SECTION -- */
-#product-section, .product {
+#product-section {
     min-height: 100vh;
 }
 #product-button {
@@ -7,4 +7,9 @@
 }
 #product-button button {
     padding: 10px !important;
+}
+
+.product {
+    min-height: 100vh;
+    background-color: rgb(224, 224, 224);
 }

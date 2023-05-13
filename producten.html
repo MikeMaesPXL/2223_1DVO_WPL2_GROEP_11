@@ -16,6 +16,7 @@
             integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"></script>
+    <script src="script.js" async></script>
 </head>
 
 <body>
@@ -81,15 +82,72 @@
 </section>
 
 <section class="product">
-
+    <div class="product-image">
+        <img class="shop-item-image" src="/images/WIP.svg" alt="img" width="300" height="300">
+    </div>
+    <div class="text-wrapper">
+        <div class="product-text">
+            <span class="shop-item-title">Klein pakket</span>
+            <hr class="my-4">
+            <h3>Koop een pakketje en krijg deze goodies!</h3>
+            <ul>
+                <li>Tut</li>
+                <li>Tut</li>
+                <li>Tut</li>
+                <li>Tut</li>
+                <li>Tut</li>
+                <li>Tut</li>
+            </ul>  
+            <span class="shop-item-price">€10</span>
+            <button class="btn btn-primary shop-item-button">Voeg toe aan winkelmandje</button>
+        </div>
+    </div>
 </section>
 
 <section class="product">
-
+    <div class="product-image">
+        <img class="shop-item-image" src="/images/WIP.svg" alt="img" width="300" height="300">
+    </div>
+    <div class="text-wrapper">
+        <div class="product-text">
+            <span class="shop-item-title">Standaard pakket</span>
+            <hr class="my-4">
+            <h3>Koop een pakketje en krijg deze goodies!</h3>
+            <ul>
+                <li>Tut</li>
+                <li>Tut</li>
+                <li>Tut</li>
+                <li>Tut</li>
+                <li>Tut</li>
+                <li>Tut</li>
+            </ul>  
+            <span class="shop-item-price">€20</span>
+            <button class="btn btn-primary shop-item-button">Voeg toe aan winkelmandje</button>
+        </div>
+    </div>
 </section>
 
 <section class="product">
-
+    <div class="product-image">
+        <img class="shop-item-image" src="/images/WIP.svg" alt="img" width="300" height="300">
+    </div>
+    <div class="text-wrapper">
+        <div class="product-text">
+            <span class="shop-item-title">Groot pakket</span>
+            <hr class="my-4">
+            <h3>Koop een pakketje en krijg deze goodies!</h3>
+            <ul>
+                <li>Tut</li>
+                <li>Tut</li>
+                <li>Tut</li>
+                <li>Tut</li>
+                <li>Tut</li>
+                <li>Tut</li>
+            </ul>  
+            <span class="shop-item-price">€30</span>
+            <button class="btn btn-primary shop-item-button">Voeg toe aan winkelmandje</button>
+        </div>
+    </div>
 </section>
 
 <section id="footer-section">
@@ -109,33 +167,14 @@
             <h1 class="fw-bold font-title header-text-color">Winkelmand</h1>
             <hr class="hr hr-blurry py-2 seperator"/>
         </div>
-        <div class="d-flex justify-content-center" id="container-wrapper">
-            <div id="item-wrapper">
-                <div class="d-flex justify-content-center align-items-center">
-                    <div class="item-shopping-cart picture-shopping-cart mx-4">
-                        <img src="/images/WIP.svg" alt="item">
-                    </div>
-                    <div class="item-shopping-cart mx-3">
-                        <p class="item-text body-text-color font-body text-center">KZ Basis Pakket</p>
-                    </div>
-                    <div class="item-shopping-cart mx-3">
-                        <input type="number" class="form-control"/>
-                    </div>
-                </div>
-                <div class="d-flex justify-content-center align-items-center mt-3">
-                    <div class="item-shopping-cart picture-shopping-cart mx-4">
-                        <img src="/images/WIP.svg" alt="item">
-                    </div>
-                    <div class="item-shopping-cart mx-3">
-                        <p class="item-text body-text-color font-body text-center">KZ plus Pakket</p>
-                    </div>
-                    <div class="item-shopping-cart mx-3">
-                        <input type="number" class="form-control"/>
-                    </div>
-                </div>
-            </div>
+        <div class="cart-items">
+        
         </div>
-        <div class="d-flex justify-content-center align-items-center flex-column" id="winkelmand-div">
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">€0</span>
+        </div>
+        <div class="d-flex justify-content-center align-items-center flex-column mt-5" id="winkelmand-div">
             <button type="button" id="winkelmand-button" class="btn btn-primary p-2 font-body fw-regular"><a
                     href="checkout.html">Checkout</a></button>
         </div>
