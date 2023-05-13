@@ -135,42 +135,23 @@
         </footer>
     </section>
 
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample">
         <div class="offcanvas-header">
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
             <div class="d-flex justify-content-center align-items-center flex-column">
                 <h1 class="fw-bold font-title header-text-color">Winkelmand</h1>
-                <hr class="hr hr-blurry py-2 seperator" />
+                <hr class="hr hr-blurry py-2 seperator"/>
             </div>
-            <div class="d-flex justify-content-center" id="container-wrapper">
-                <div id="item-wrapper">
-                    <div class="d-flex justify-content-center align-items-center">
-                        <div class="item-shopping-cart picture-shopping-cart mx-4">
-                            <img src="/images/WIP.svg" alt="item">
-                        </div>
-                        <div class="item-shopping-cart mx-3">
-                            <p class="item-text body-text-color font-body text-center">KZ Basis Pakket</p>
-                        </div>
-                        <div class="item-shopping-cart mx-3">
-                            <input type="number" class="form-control" />
-                        </div>
-                    </div>
-                    <div class="d-flex justify-content-center align-items-center mt-3">
-                        <div class="item-shopping-cart picture-shopping-cart mx-4">
-                            <img src="/images/WIP.svg" alt="item">
-                        </div>
-                        <div class="item-shopping-cart mx-3">
-                            <p class="item-text body-text-color font-body text-center">KZ plus Pakket</p>
-                        </div>
-                        <div class="item-shopping-cart mx-3">
-                            <input type="number" class="form-control" />
-                        </div>
-                    </div>
-                </div>
+            <div class="cart-items">
+            
             </div>
-            <div class="d-flex justify-content-center align-items-center flex-column" id="winkelmand-div">
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">€0</span>
+            </div>
+            <div class="d-flex justify-content-center align-items-center flex-column mt-5" id="winkelmand-div">
                 <button type="button" id="winkelmand-button" class="btn btn-primary p-2 font-body fw-regular"><a
                         href="checkout.html">Checkout</a></button>
             </div>
