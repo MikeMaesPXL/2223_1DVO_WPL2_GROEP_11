@@ -23,7 +23,7 @@
     background-color: #2F1966;
     border-color: #2F1966;
     width: 192px;
-    height: 64px;
+    line-height: 40px;
 }
 
 .btn.btn-danger:hover {
@@ -91,6 +91,10 @@
     height: 500px;
 }
 
+.phonepictures {
+    background: rgba(255, 155, 0, 0.1);
+}
+
 .section-height {
     padding-top: 500px;
     padding-bottom: 500px;
@@ -114,6 +118,62 @@
     margin-top: -84px;
 }
 
+@media screen and (min-width: 1180px) and (max-width: 1400px) {
+    .smarthphones {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: purple;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .smarthphones {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: red;
+    }
+    .landing {
+        background-color: red;
+        margin-top: 100px;
+    }
+}
+
+@media screen and (min-width: 736px) and (max-width: 992px) {
+    .smarthphones {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: orange;
+    }
+    .landing {
+        background-color: blue;
+        margin-top: 100px;
+
+    }
+}
+
+@media screen and (min-width: 414px) and (max-width: 767px) {
+    .smarthphones {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: blue;
+    }
+    .landing {
+        background-color: purple;
+        margin-top: 100px;
+    }
+}
+
+
+
+
 .bs-icon {
     --bs-icon-size: .75rem;
     display: flex;
@@ -131,7 +191,6 @@
 }
 
 .bs-icon.bs-icon-primary {
-    color: var(--bs-white);
     background: var(--bs-primary);
 }
 
