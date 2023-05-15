@@ -76,6 +76,34 @@
     top: 550px;
     left: 550px;
 }
+@media screen and (min-width: 736px) and (max-width: 1180px) {
+    .missie-wrapper {
+        margin-bottom: -00px !important;
+        margin-top: 0px;
+        margin-left: 0px !important;
+    }
+
+    .visie-wrapper {
+        margin-top: 0px;
+        margin-bottom: 200px;
+        margin-right: 0px !important;
+    }
+
+    .orange-blob {
+        background-position: -30% 160%;
+    }
+
+    #icon_logo {
+        scale: 0.8;
+        left: -5%;
+        top: 40%;
+    }
+
+    .arrow {
+        top: 70%;
+    }
+
+}
 
 @media screen and (max-width: 736px) {
     .visie-wrapper {
@@ -93,6 +121,11 @@
 
     .section-wrapper{
         background-color: yellow;
+        padding-top: -2000px;
+    }
+
+    .purple-blob {
+        padding-top: -200px;
     }
 
     #about-info-section .mobile,
