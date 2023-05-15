@@ -54,12 +54,12 @@ function addItemToCart(title, price, imageSrc) {
     let cartItems = document.getElementsByClassName('cart-items')[0]
     let cartItemNames = cartItems.getElementsByClassName('cart-item-title')
     for (let i = 0; i < cartItemNames.length; i++) {
-        if (cartItemNames[i].innerText == title) {
+        if (cartItemNames[i].innerText === title) {
             alert('Dit product is al in je winkelmandje.')
             return
         }
     }
-    let cartRowContents = `
+    cartRow.innerHTML = `
             <div class="cart-item cart-column">
                 <img class="cart-item-image" src="${imageSrc}" alt="img" width="75" height="75">
                 <span class="cart-item-title">${title}</span>
@@ -70,7 +70,7 @@ function addItemToCart(title, price, imageSrc) {
                 <button class="btn btn-danger" type="button">REMOVE</button>
             </div>
     `
-    cartRow.innerHTML = cartRowContents
+    // cartRow.innerHTML = cartRowContents
     cartItems.append(cartRow)
     cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click',
     removeCartitem)
