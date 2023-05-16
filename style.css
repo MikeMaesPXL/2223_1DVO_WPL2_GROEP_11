@@ -135,8 +135,7 @@ body::-webkit-scrollbar {
     color: white;
     background-color: #EB5757;
     border: none;
-    border-radius: .3em;
-    margin-left: 1.3em;
+    border-radius: 1.3em;
     font-weight: bold;
 }
 
