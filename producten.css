@@ -16,7 +16,7 @@
 }
 
 #product-section-2, #product-section-4 {
-    background-color: #faf6f4;
+    background-color: rgba(255, 155, 0, 0.15);
 }
 
 #product-section-3 {
@@ -63,6 +63,7 @@
 
 .product-text ul li {
     padding-top: 5px;
+    list-style-type: none;
 }
 
 .shop-item-title {
