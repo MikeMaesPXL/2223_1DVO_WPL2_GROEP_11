@@ -1,30 +1,30 @@
 // ID, TITEL, PRICE, ,QUANTITY, PICTURE
 let items = [{
         id: "0",
-        title: "Klein pakket",
+        title: "Starter pakket",
         price: 10,
         quantity: 1,
-        picture: "/images/Klein%20pakket.png"
+        picture: "/images/Starter_Pakket.png"
     },
     {
         id: "1",
-        title: "Starter pakket",
+        title: "Klein pakket",
         price: 20,
         quantity: 1,
-        picture: "/images/Klein%20pakket.png"
+        picture: "/images/Klein_Pakket.png"
     },
     {
         id: "2",
         title: "Groot pakket",
         price: 30,
         quantity: 1,
-        picture: "/images/Klein%20pakket.png"
+        picture: "/images/Groot_Pakket.png"
     }
 ];
 
 //Variables
 let buttons = document.querySelectorAll(".btn-click");
-let remove_buttons = document.querySelectorAll(".btn-remove")
+// let remove_buttons = document.querySelectorAll(".btn-remove")
 buttons.forEach((btn) => {
     btn.addEventListener('click', event => {
         let waarde = event.target.dataset.waarde;
@@ -32,11 +32,11 @@ buttons.forEach((btn) => {
     })
 });
 
-buttons.forEach((btn) => {
-    btn.addEventListener('click', (event)=> {
-        removeItem();
-    });
-});
+// remove_buttons.forEach((btn) => {
+//     btn.addEventListener('click', (event)=> {
+//         removeItem();
+//     });
+// });
 
 //Cart array
 let shopping_cart = [];
@@ -53,45 +53,46 @@ let shopping_cart = [];
 // }
 
 function addItem(waarde) {
+    //OPTIE A:product bestaat al in cart; aantal +1
     for (let i = 0; i < shopping_cart.length; i++) {
         if (shopping_cart[i].id === waarde) {
             shopping_cart[i].quantity += 1;
+            displayItems();
             return;
         }
     }
+    //OPTIE B: product bestaat nog niet; aanmaken en quantity op 1 zetten
     shopping_cart.push(items[waarde]);
-    displayItems(waarde);
-        // if (shopping_cart[waarde] === undefined) {
-        //     shopping_cart.push(items[waarde]);
-        //     console.log("Nieuw item toegevoegd");
-        // } else if (shopping_cart[waarde] === items[waarde]) {
-        //     shopping_cart[waarde].quantity += 1;
-        //     console.log("Item staat al in de lijst");
-        // }
-    // }
+
+    //Display geüpdate winkelmand
+    displayItems();
 }
-function removeItem(waarde) {
+function removeItem() {
+    console.log("Remove item");
     for (let i = 0; i < shopping_cart.length; i++) {
-        if (shopping_cart[i].id === waarde) {
+        //Check to see which remove is pressed
+        if (shopping_cart[i].quantity >= 1) {
+            console.log("Quantity > 1")
             shopping_cart[i].quantity -= 1;
-            if(shopping_cart[i].quantity < 1) {
+            if (shopping_cart[i].quantity < 1) {
                 shopping_cart.splice(i, 1);
             }
-            return;
         }
+        displayItems();
     }
-    // console.log("in remove item")
-    // debugger;
-    // if(shopping_items[waarde].quantity.count > 0) {
-    //     shopping_items[waarde].quantity.value -= 1;
-    // } else if(shopping_items[waarde].quantity.count <=0) {
-    //     shopping_items[waarde].remove();
+    // shopping_cart[i].quantity -= 1;
+    // for (let i = 0; i < shopping_cart.length; i++) {
+    //     if (shopping_cart[i].quantity < 1) {
+    //         shopping_cart.splice(i, 1);
+    //     }
     // }
 }
 
-function displayItems(waarde) {
+function displayItems() {
     let cart_items = document.getElementById("cart-items");
     let cart_item;
+
+    cart_items.innerHTML = "";
 
     for (let i = 0; i < shopping_cart.length; i++) {
         //Filling cart item
@@ -105,20 +106,21 @@ function displayItems(waarde) {
         let remove_button = document.createElement("button");
 
         //Values
-        img.src = items[waarde].picture;
-        title.innerText = items[waarde].title;
-        price.innerText = "€" + items[waarde].price;
-        quantity.innerText = items[waarde].quantity;
+        img.src = shopping_cart[i].picture;
+        title.innerText = shopping_cart[i].title;
+        price.innerText = "€" + shopping_cart[i].price;
+        quantity.innerText = shopping_cart[i].quantity;
         remove_button.innerText = "REMOVE";
+        remove_button.type = "button";
 
         //Classes and events
         cart_item.classList.add("cart-item", "cart-column")
         img.classList.add("cart-item-image");
         title.classList.add("cart-item-title");
         price.classList.add("cart-price");
-        quantity.classList.add("cart-item-quantity")
+        quantity.classList.add("cart-item-quantity");
         remove_button.classList.add("btn", "btn-danger", "btn-remove");
-        // remove_button.addEventListener('click', removeItem);
+        remove_button.addEventListener('click', removeItem);
 
         //Add to cart item
         cart_item.appendChild(img);
@@ -126,10 +128,13 @@ function displayItems(waarde) {
         cart_item.appendChild(price);
         cart_item.appendChild(quantity);
         cart_item.appendChild(remove_button);
-    }
+
         //Add everything
         cart_items.appendChild(cart_item);
-        displayTotal(waarde)
+    }
+        displayTotal()
+        // let total_text = document.getElementsByClassName("cart-total-price");
+        // total_text.innerText = displayTotal();
 }
 
 function displayTotal() {
@@ -137,13 +142,5 @@ function displayTotal() {
     for(let i = 0; i < shopping_cart.length; i++) {
         total += shopping_cart[i].price * shopping_cart[i].quantity;
     }
-    return total.toFixed(2)
-
-    // let total_text = document.getElementsByClassName("cart-total-price");
-    // console.log("in displayTotal");
-    // for(let item in shopping_items) {
-    //     total = total + (shopping_items[waarde].price * shopping_items[waarde].quantity);
-    // }
-    // total_text.innerHTML = "€" + total;
-    // debugger;
+    return total.toFixed(2);
 }
