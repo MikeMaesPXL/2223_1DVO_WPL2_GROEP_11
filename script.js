@@ -67,25 +67,17 @@ function addItem(waarde) {
     //Display geüpdate winkelmand
     displayItems();
 }
-function removeItem() {
-    console.log("Remove item");
+function removeItem(remove_value) {
     for (let i = 0; i < shopping_cart.length; i++) {
-        //Check to see which remove is pressed
-        if (shopping_cart[i].quantity >= 1) {
-            console.log("Quantity > 1")
+        if (shopping_cart[i].id === remove_value) {
             shopping_cart[i].quantity -= 1;
             if (shopping_cart[i].quantity < 1) {
+                shopping_cart[i].quantity = 1;
                 shopping_cart.splice(i, 1);
             }
         }
         displayItems();
     }
-    // shopping_cart[i].quantity -= 1;
-    // for (let i = 0; i < shopping_cart.length; i++) {
-    //     if (shopping_cart[i].quantity < 1) {
-    //         shopping_cart.splice(i, 1);
-    //     }
-    // }
 }
 
 function displayItems() {
@@ -120,7 +112,9 @@ function displayItems() {
         price.classList.add("cart-price");
         quantity.classList.add("cart-item-quantity");
         remove_button.classList.add("btn", "btn-danger", "btn-remove");
-        remove_button.addEventListener('click', removeItem);
+        // let remove_value = remove_button.dataset.remove_waarde = "id" + shopping_cart[i].id;
+        remove_button.dataset.waarde = shopping_cart[i].id;
+        //remove_button.addEventListener('click', removeItem(shopping_cart[i].id));
 
         //Add to cart item
         cart_item.appendChild(img);
@@ -132,15 +126,22 @@ function displayItems() {
         //Add everything
         cart_items.appendChild(cart_item);
     }
-        displayTotal()
-        // let total_text = document.getElementsByClassName("cart-total-price");
-        // total_text.innerText = displayTotal();
+
+    let allRemoveButtons = document.querySelectorAll(".btn-remove");
+    allRemoveButtons.forEach((btn) => {
+        btn.addEventListener('click', event => {
+            let waarde = event.target.dataset.waarde;
+            removeItem(waarde);
+        })
+    });
+
+    displayTotal();
 }
 
 function displayTotal() {
     let total = 0;
     for(let i = 0; i < shopping_cart.length; i++) {
-        total += shopping_cart[i].price * shopping_cart[i].quantity;
+        total += (shopping_cart[i].price * shopping_cart[i].quantity);
     }
     return total.toFixed(2);
 }
