@@ -311,33 +311,12 @@
                 <h1 class="fw-bold font-title header-text-color">Winkelmand</h1>
                 <hr class="hr hr-blurry py-2 seperator"/>
             </div>
-            <div class="cart-items">
-                <!--<div class="cart-row">
-                    <div class="cart-item cart-column">
-                        <img class="cart-item-image" src="images/WIP.svg" alt="img" width="75" height="75">
-                        <span class="cart-item-title">Klein pakket</span>
-                    </div>
-                    <span class="cart-price cart-column">€10</span>
-                    <div class="cart-quantity cart-column">
-                        <input class="cart-quantity-input" type="number" value="1">
-                        <button class="btn btn-danger" type="button">REMOVE</button>
-                    </div>
-                </div>
-                <div class="cart-row">
-                    <div class="cart-item cart-column">
-                        <img class="cart-item-image" src="images/WIP.svg" alt="img" width="75" height="75">
-                        <span class="cart-item-title">Standaard pakket</span>
-                    </div>
-                    <span class="cart-price cart-column">€20</span>
-                    <div class="cart-quantity cart-column">
-                        <input class="cart-quantity-input" type="number" value="1">
-                        <button class="btn btn-danger" type="button">REMOVE</button>
-                    </div>
-                </div>-->
+            <div id="cart-items">
+
             </div>
             <div class="cart-total">
                 <strong class="cart-total-title">Total</strong>
-                <span class="cart-total-price">€0</span>
+                <span id="cartPrice" class="cart-total-price">€0</span>
             </div>
             <div class="d-flex justify-content-center align-items-center flex-column mt-5" id="winkelmand-div">
                 <button type="button" id="winkelmand-button" class="btn btn-primary p-2 font-body fw-regular"><a
@@ -345,6 +324,7 @@
             </div>
         </div>
     </div>
+<script src="script.js" async></script>
 </body>
 
 </html>
