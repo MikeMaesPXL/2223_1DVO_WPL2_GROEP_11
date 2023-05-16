@@ -32,28 +32,23 @@ buttons.forEach((btn) => {
     })
 });
 
-// remove_buttons.forEach((btn) => {
-//     btn.addEventListener('click', (event)=> {
-//         removeItem();
-//     });
-// });
-
 //Cart array
 let shopping_cart = [];
+loadCart();
+function loadCart() {
+    if(localStorage.getItem('shopping_cart')) {
+        shopping_cart = JSON.parse(localStorage.getItem('shopping_cart'));
+        displayItems();
+    }else{
+        shopping_cart = [];
+    }
+}
 
-
-// function saveCart() {
-//     sessionStorage.setItem('shopping_cart', JSON.stringify(items));
-// }
-// function loadCart() {
-//     shopping_items = JSON.parse(sessionStorage.getItem('shopping_cart'));
-// }
-// if (sessionStorage.getItem('shopping_cart') != null) {
-//     loadCart();
-// }
+function saveCart() {
+    localStorage.setItem('shopping_cart', JSON.stringify(shopping_cart));
+}
 
 function addItem(waarde) {
-    //OPTIE A:product bestaat al in cart; aantal +1
     for (let i = 0; i < shopping_cart.length; i++) {
         if (shopping_cart[i].id === waarde) {
             shopping_cart[i].quantity += 1;
@@ -61,10 +56,7 @@ function addItem(waarde) {
             return;
         }
     }
-    //OPTIE B: product bestaat nog niet; aanmaken en quantity op 1 zetten
     shopping_cart.push(items[waarde]);
-
-    //Display geüpdate winkelmand
     displayItems();
 }
 function removeItem(remove_value) {
@@ -84,6 +76,7 @@ function displayItems() {
     let cart_items = document.getElementById("cart-items");
     let cart_item;
 
+    //Winkelmand leegmaken
     cart_items.innerHTML = "";
 
     for (let i = 0; i < shopping_cart.length; i++) {
@@ -136,6 +129,7 @@ function displayItems() {
     });
 
     displayTotal();
+    saveCart();
 }
 
 function displayTotal() {
@@ -143,5 +137,6 @@ function displayTotal() {
     for(let i = 0; i < shopping_cart.length; i++) {
         total += (shopping_cart[i].price * shopping_cart[i].quantity);
     }
-    return total.toFixed(2);
+    total = "€" + total;
+    document.getElementById("cartPrice").innerHTML = total;
 }
