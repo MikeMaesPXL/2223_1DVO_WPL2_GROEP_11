@@ -19,27 +19,25 @@
     font-size: 20px;
 }
 
-.btn.btn-danger {
+.btn.btn-primary {
     background-color: #2F1966;
     border-color: #2F1966;
     width: 192px;
     line-height: 40px;
 }
 
-.btn.btn-danger:hover {
+.btn.btn-primary:hover {
     background-color: #8B17FF;
     border-color: #8B17FF
 }
 
-.btn.btn-danger:active {
+.btn.btn-primary:active {
     background-color: #8B17FF !important;
 }
 
 .phonesection {
     padding-top: 186px;
     background: rgba(255, 155, 0, 0.1);
-    padding-bottom: 170px;
-    margin-bottom: -8px;
 }
 
 #cardtop {
@@ -96,8 +94,8 @@
 }
 
 .section-height {
-    padding-top: 500px;
-    padding-bottom: 500px;
+    padding-top: 300px;
+    padding-bottom: 400px;
 }
 
 #gradianttext {
@@ -109,15 +107,12 @@
 }
 
 .arrow {
+    scale: 0.8;
     width: 1020px;
     position: absolute;
-    margin-left: -68px;
-    padding-left: 0px;
-    padding-right: 260px;
-    padding-top: 0px;
-    margin-top: -84px;
+    margin-left: -908px;
+    margin-top: -420px;
 }
-
 @media screen and (min-width: 1180px) and (max-width: 1400px) {
     .smarthphones {
         display: flex;
@@ -126,35 +121,48 @@
         align-items: center;
         background-color: purple;
     }
+
+    .arrow {
+        position: absolute;
+    }
+
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
+    .landing {
+        margin-top: 100px;
+    }
+
     .smarthphones {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        background-color: red;
     }
-    .landing {
-        background-color: red;
-        margin-top: 100px;
-    }
+
 }
 
-@media screen and (min-width: 736px) and (max-width: 992px) {
-    .smarthphones {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        background-color: orange;
-    }
+@media screen and (min-width: 767px) and (max-width: 992px) {
     .landing {
-        background-color: blue;
         margin-top: 100px;
 
     }
+
+    .temp4 {
+        display: flex;
+        flex-direction: column !important;
+        align-content: center !important;
+        justify-content: center !important;
+    }
+
+    .smarthphones {
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center;
+    }
+
+
 }
 
 @media screen and (min-width: 414px) and (max-width: 767px) {
@@ -168,6 +176,17 @@
     .landing {
         background-color: purple;
         margin-top: 100px;
+    }
+
+    .temp4 {
+        display: flex;
+        flex-direction: column !important;
+        align-content: center !important;
+        justify-content: center !important;
+        background-color: red !important;
+    }
+    .arrow {
+        display: none;
     }
 }
 

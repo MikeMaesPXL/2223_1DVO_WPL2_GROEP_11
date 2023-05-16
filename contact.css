@@ -20,23 +20,27 @@ input[type=tel] {
     width: 89.4%;
 }
 
-.btn.btn-danger {
+.btn.btn-primary-custom {
     background-color: #2F1966;
     border-color: #2F1966;
+    color: white;
     margin-top: 100px;
     width: 200px;
     height: 50px;
     font-size: 18px;
 }
 
-.btn.btn-danger:hover {
+.btn.btn-primary-custom:hover {
     background-color: #8B17FF;
+    color: white;
     border-color: #8B17FF
 }
 
-.btn.btn-danger:active {
+.btn.btn-primary-custom:active {
     background-color: #8B17FF !important;
 }
+
+
 
 #centered {
     margin-top: 100px;
