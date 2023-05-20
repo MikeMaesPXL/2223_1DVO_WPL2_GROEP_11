@@ -116,11 +116,9 @@
         margin-bottom: -00px !important;
         margin-top: 0px;
         margin-left: 0px !important;
-        background-color: red;
     }
 
     .section-wrapper{
-        background-color: yellow;
         padding-top: -2000px;
     }
 
@@ -145,12 +143,11 @@
     .arrow {
         height: 120px;
         margin-top: 50px;
-        top: 60%;
-        left: 150px;
+        top: 73%;
+        left: 170px;
         transform: translateY(-50%);
         rotate: 180deg;
         scale: 2;
-        background-color: red;
     }
 
 }
