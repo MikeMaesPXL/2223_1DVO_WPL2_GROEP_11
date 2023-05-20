@@ -79,14 +79,22 @@
 
 #phoneImg {
     height: 450px;
+    transition: filter 0.3s ease, opacity 0.3s ease;
 }
 
 #phoneImg2 {
     height: 450px;
+    transition: filter 0.3s ease, opacity 0.3s ease;
 }
 
 #phoneImg3 {
     height: 450px;
+    transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.phone-image-grayed-out {
+    filter: grayscale(100%);
+    opacity: 0.4;
 }
 
 .phonepictures {
