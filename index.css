@@ -126,6 +126,15 @@
     margin-top: -30px;
 }
 
+
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+
+    .landing {
+        margin-bottom: 220px;
+        margin-top: 50px;
+    }
+}
+
 @media screen and (min-width: 1180px) and (max-width: 1400px) {
     .smarthphones {
         display: flex;
