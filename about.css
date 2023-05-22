@@ -73,9 +73,23 @@
     height: 600px;
     transform: rotate(220deg);
     position: absolute;
-    top: 670px;
-    left: 700px;
+    top: 550px;
+    left: 550px;
 }
+
+@media screen and (min-width: 1920px) {
+    .arrow {
+        height: 600px;
+        transform: rotate(220deg);
+        position: absolute;
+        top: 670px;
+        left: 700px;
+    }
+}
+
+
+
+
 
 @media screen and (min-width: 1180px) and (max-width: 1400px) {
     .arrow {
@@ -108,8 +122,7 @@
     }
 
     .arrow {
-        left: 300px;
-        top: 820px;
+        display: none;
     }
 
     .about-centered {
