@@ -18,6 +18,12 @@ hr {
     width: 85%;
 }
 
+#borderStyle {
+    border-bottom: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 span.text-primary,
 #facturatie-adres,
 #betaling-title {
