@@ -136,6 +136,7 @@ body::-webkit-scrollbar {
     background-color: #EB5757;
     border: none;
     margin-left: 1.3em;
+    margin-right: 1.3em;
     font-weight: bold;
 }
 
