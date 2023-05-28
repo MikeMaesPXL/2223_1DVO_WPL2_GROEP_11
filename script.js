@@ -98,7 +98,7 @@ function displayItems() {
 
         //Classes and events
         cart_item.classList.add("cart-item", "cart-column")
-        img.classList.add("cart-item-image");
+        img.classList.add("cart-item-image", "image-product");
         title.classList.add("cart-item-title");
         price.classList.add("cart-price");
         quantity.classList.add("cart-item-quantity");
