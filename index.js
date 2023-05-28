@@ -31,4 +31,4 @@ function changePhoneImage() {
     selectPhone(currentPhone + 1);
 }
 
-setInterval(changePhoneImage, 4000);
+setInterval(changePhoneImage, 8000);
