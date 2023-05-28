@@ -110,7 +110,7 @@ body::-webkit-scrollbar {
 
 .cart-price {
     width: 20%;
-    margin-left: 1.3em;
+    margin-left: 0;
     font-size: 1.2em;
     color: #333;
 }
@@ -144,9 +144,19 @@ body::-webkit-scrollbar {
     background-color: #CC4C4C;
 }
 
+.cart-item-trash {
+    width: 25px;
+    height: auto;
+    margin-left: 1.3em;
+}
+
+.cart-item-trash:hover {
+    cursor: pointer !important;
+}
+
 .cart-item-quantity {
     color: #333;
-    margin-left: 1.3em;
+    margin: 0 2.6em;
     font-size: 1.2em;
 }
 
@@ -178,15 +188,28 @@ body::-webkit-scrollbar {
 }
 
 .cart-total-title {
-    font-weight: bold;
-    font-size: 1.5em;
+    font-weight: normal;
+    font-size: 1.2em;
     color: black;
     margin-right: 20px;
 }
 
 .cart-total-price {
-    color: #333;
-    font-size: 1.1em;
+    font-weight: normal;
+    color: black;
+    font-size: 1.2em;
+}
+
+#winkelmand-button, #btn-outline {
+    width: 100% !important;
+}
+
+#btn-outline {
+    background-color: white !important;
+    border: 2px solid black !important;
+}
+#btn-outline a {
+    color: black !important;
 }
 
 
@@ -233,5 +256,17 @@ body::-webkit-scrollbar {
     .offcanvas {
         height: 100vh !important;
         width: 100% !important;
+    }
+
+    .cart-item-trash {
+        margin-left: 0.8em;
+    }
+
+    .cart-item-quantity {
+        margin: 0 1.8em;
+    }
+
+    .cart-item-title {
+        margin-left: 0.8em;
     }
 }
