@@ -228,13 +228,17 @@ body::-webkit-scrollbar {
 }
 
 /* -- MEDIA QUERIES -- */
-@media screen and (min-width: 1180px) and (max-width: 1400px) {
+@media screen and (min-width: 1180px) and (max-width: 1921px) {
+    .image-product {
+        margin-left: 1.6em;
+    }
+
     .cart-item-trash {
         margin-left: 1.6em;
     }
 
     .cart-item-quantity {
-        margin: 0 3.4em;
+        margin: 0 3.6em;
     }
 
     .cart-item-title {
