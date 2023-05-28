@@ -75,7 +75,6 @@
                                 referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
-
                 <div class="row mt-5">
                     <div class="col-md-12 icons">
                         <a href="https://twitter.com/KleineZorg" target="_blank"><img src="icons\icons8-twitter.svg"
@@ -86,7 +85,6 @@
                                 src="icons\icons8-linkedin.svg" alt="LinkedIn icon"></a>
                         <a href="https://www.facebook.com/sharer/sharer.php?kid_directed_site=0&u=https%3A%2F%2Fkleine-zorg.netlify.app%2F&display=popup&ref=plugin&src=share_button" target="_blank"><img
                                 src="icons/icons8-facebook.svg" alt="LinkedIn icon"></a>
-
                     </div>
                 </div>
             </div>
@@ -120,7 +118,7 @@
                                           placeholder="Type hier uw bericht..."></textarea>
                         </div>
                     </div>
-                    <div class="col-12 sizing2 font-body pt-3">
+                    <div class="col-12 sizing2 font-title fw-regular pt-3">
                         <button type="submit" class="btn btn-primary-custom">Verstuur bericht</button>
                     </div>
                 </form>
@@ -138,28 +136,30 @@
 </section>
 
 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample">
-    <div class="offcanvas-header">
-        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
+    <div class="offcanvas-header"></div>
     <div class="offcanvas-body">
         <div class="d-flex justify-content-center align-items-center flex-column">
-            <h1 class="fw-bold font-title header-text-color">Winkelmand</h1>
-            <hr class="hr hr-blurry py-2 seperator"/>
+            <h1 class="fw-regular font-title">Winkelmand</h1>
         </div>
+        <hr class="hr hr-blurry py-2"/>
         <div id="cart-items">
 
         </div>
-        <div class="cart-total">
-            <strong class="cart-total-title">Total</strong>
+        <hr class="hr hr-blurry py-2"/>
+        <div class="cart-total d-flex justify-content-between align-items-center">
+            <span class="cart-total-title">Totale prijs</span>
             <span id="cartPrice" class="cart-total-price">€0</span>
         </div>
-        <div class="d-flex justify-content-center align-items-center flex-column mt-5" id="winkelmand-div">
-            <button type="button" id="winkelmand-button" class="btn btn-primary p-2 font-body fw-regular"><a
-                    href="checkout.html">Checkout</a></button>
+        <div class="d-flex justify-content-center align-items-center flex-column mt-4" id="winkelmand-div">
+            <button type="button" id="winkelmand-button" class="btn btn-primary p-1 font-title fw-regular"><a
+                    href="checkout.html">Ga verder naar betalen</a></button>
+        </div>
+        <div class="d-flex justify-content-center align-items-center flex-column mt-3">
+            <button type="button" id="btn-outline" class="btn btn-primary p-1 font-title fw-regular text-reset"><a
+                    data-bs-dismiss="offcanvas" aria-label="Close">Verder winkelen</a></button>
         </div>
     </div>
 </div>
 <script src="script.js" async></script>
 </body>
-
 </html>

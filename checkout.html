@@ -16,9 +16,7 @@
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"></script>
-
 </head>
-
 <body>
     <section id="nav-bar-section">
         <nav class="navbar navbar-expand-lg fixed-top">
@@ -198,89 +196,7 @@
                                     </div>
                                 </div>
                             </div>
-
-<!--                            <hr class="my-5">-->
-
-<!--                            <div class="form-check">-->
-<!--                                <input type="checkbox" class="form-check-input" id="same-address">-->
-<!--                                <label class="form-check-label font-body fw-regular body-text-color"-->
-<!--                                    for="same-address">Bezorgadres is hetzelfde als het facturatieadres.</label>-->
-<!--                            </div>-->
-
-<!--                            <div class="form-check">-->
-<!--                                <input type="checkbox" class="form-check-input" id="save-info">-->
-<!--                                <label class="form-check-label font-body fw-regular body-text-color" for="save-info">Hou-->
-<!--                                    deze informatie bij voor volgende keer.</label>-->
-<!--                            </div>-->
-
-<!--                            <hr class="my-5">-->
-
-<!--                            <h4 class="mb-3 font-title" id="betaling-title">Betaling</h4>-->
-
-<!--                            <div class="my-3">-->
-<!--                                <div class="form-check">-->
-<!--                                    <input id="credit" name="paymentMethod" type="radio" class="form-check-input"-->
-<!--                                        checked required>-->
-<!--                                    <label class="form-check-label font-body fw-regular body-text-color"-->
-<!--                                        for="credit">Credit kaart</label>-->
-<!--                                </div>-->
-<!--                                <div class="form-check">-->
-<!--                                    <input id="debit" name="paymentMethod" type="radio" class="form-check-input"-->
-<!--                                        required>-->
-<!--                                    <label class="form-check-label font-body fw-regular body-text-color"-->
-<!--                                        for="debit">Debit kaart</label>-->
-<!--                                </div>-->
-<!--                                <div class="form-check">-->
-<!--                                    <input id="paypal" name="paymentMethod" type="radio" class="form-check-input"-->
-<!--                                        required>-->
-<!--                                    <label class="form-check-label font-body fw-regular body-text-color"-->
-<!--                                        for="paypal">PayPal</label>-->
-<!--                                </div>-->
-<!--                            </div>-->
-
-<!--                            <div class="row gy-3">-->
-<!--                                <div class="col-md-5">-->
-<!--                                    <label for="cc-name" class="form-label font-body fw-regular body-text-color">Naam op-->
-<!--                                        de-->
-<!--                                        kaart</label>-->
-<!--                                    <input type="text" class="form-control" id="cc-name" placeholder="" required>-->
-<!--                                    <small class="text-muted font-body">Naam zoals weergegeven op de-->
-<!--                                        kaart.</small>-->
-<!--                                    <div class="invalid-feedback font-body">-->
-<!--                                        Naam op de kaart verplicht.-->
-<!--                                    </div>-->
-<!--                                </div>-->
-
-<!--                                <div class="col-md-5">-->
-<!--                                    <label for="cc-number"-->
-<!--                                        class="form-label font-body fw-regular body-text-color">Credit kaart-->
-<!--                                        nummer</label>-->
-<!--                                    <input type="text" class="form-control" id="cc-number" placeholder="" required>-->
-<!--                                    <div class="invalid-feedback font-body">-->
-<!--                                        Credit kaart nummer is verplicht.-->
-<!--                                    </div>-->
-<!--                                </div>-->
-
-<!--                                <div class="col-md-3">-->
-<!--                                    <label for="cc-expiration"-->
-<!--                                        class="form-label font-body fw-regular body-text-color">Vervaldatum</label>-->
-<!--                                    <input type="text" class="form-control" id="cc-expiration" placeholder="" required>-->
-<!--                                    <div class="invalid-feedback font-body">-->
-<!--                                        Vervaldatum is verplicht.-->
-<!--                                    </div>-->
-<!--                                </div>-->
-
-<!--                                <div class="col-md-3">-->
-<!--                                    <label for="cc-cvv"-->
-<!--                                        class="form-label font-body fw-regular body-text-color">CVV</label>-->
-<!--                                    <input type="text" class="form-control" id="cc-cvv" placeholder="" required>-->
-<!--                                    <div class="invalid-feedback font-body">-->
-<!--                                        Veiligheidscode verplicht.-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <hr class="my-5">-->
-                            <button id="betalen-button" class="w-40 btn btn-primary btn-lg font-body fw-regular mt-5"
+                            <button id="betalen-button" class="w-40 btn btn-primary btn-lg font-title fw-regular mt-5"
                                 type="submit">Ga verder naar betalen</button>
                         </form>
                     </div>
@@ -298,24 +214,27 @@
     </section>
 
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample">
-        <div class="offcanvas-header">
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
+        <div class="offcanvas-header"></div>
         <div class="offcanvas-body">
             <div class="d-flex justify-content-center align-items-center flex-column">
-                <h1 class="fw-bold font-title header-text-color">Winkelmand</h1>
-                <hr class="hr hr-blurry py-2 seperator"/>
+                <h1 class="fw-regular font-title">Winkelmand</h1>
             </div>
+            <hr class="hr hr-blurry py-2"/>
             <div id="cart-items">
 
             </div>
-            <div class="cart-total">
-                <strong class="cart-total-title">Total</strong>
+            <hr class="hr hr-blurry py-2"/>
+            <div class="cart-total d-flex justify-content-between align-items-center">
+                <span class="cart-total-title">Totale prijs</span>
                 <span id="cartPrice" class="cart-total-price">€0</span>
             </div>
-            <div class="d-flex justify-content-center align-items-center flex-column mt-5" id="winkelmand-div">
-                <button type="button" id="winkelmand-button" class="btn btn-primary p-2 font-body fw-regular"><a
-                        href="checkout.html">Checkout</a></button>
+            <div class="d-flex justify-content-center align-items-center flex-column mt-4" id="winkelmand-div">
+                <button type="button" id="winkelmand-button" class="btn btn-primary p-1 font-title fw-regular"><a
+                        href="checkout.html">Ga verder naar betalen</a></button>
+            </div>
+            <div class="d-flex justify-content-center align-items-center flex-column mt-3">
+                <button type="button" id="btn-outline" class="btn btn-primary p-1 font-title fw-regular text-reset"><a
+                        data-bs-dismiss="offcanvas" aria-label="Close">Verder winkelen</a></button>
             </div>
         </div>
     </div>
