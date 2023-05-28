@@ -228,6 +228,20 @@ body::-webkit-scrollbar {
 }
 
 /* -- MEDIA QUERIES -- */
+@media screen and (min-width: 1180px) and (max-width: 1400px) {
+    .cart-item-trash {
+        margin-left: 1.6em;
+    }
+
+    .cart-item-quantity {
+        margin: 0 3.4em;
+    }
+
+    .cart-item-title {
+        margin-left: 1.6em;
+    }
+}
+
 @media screen and (max-width: 736px) {
     .navbar-brand {
         padding-left: 20px !important;
