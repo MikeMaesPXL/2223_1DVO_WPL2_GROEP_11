@@ -132,6 +132,9 @@
 
 #ontdek-meer {
     width: 200px !important;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 @media screen and (min-width: 1920px) {
