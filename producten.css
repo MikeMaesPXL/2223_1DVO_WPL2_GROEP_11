@@ -28,7 +28,6 @@
 
 .text-wrapper {
     width: 35%;
-    height: 75vh;
     margin: 50px;
     position: relative;
 }
@@ -39,6 +38,11 @@
     object-fit: cover;
     overflow: hidden;
     margin: 50px;
+    padding-top: 50px;
+}
+
+.shop-item-image {
+    scale: 0.7;
 }
 
 #photo_product {
@@ -182,6 +186,19 @@
     .shop-item-title {
         display: flex;
         justify-content: center;
+    }
+
+    .product-image {
+        width: 35%;
+        height: 75vh;
+        object-fit: cover;
+        overflow: hidden;
+        margin: 50px;
+        padding-top: 50px;
+    }
+
+    .shop-item-image {
+        scale: 1;
     }
 
     .line-mobile-1 {
